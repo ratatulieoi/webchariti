@@ -1,1 +1,41 @@
-extends _template.pug
+extends template.pug
+
+
+block head
+    link(rel="stylesheet" href="web_templating/csshalaman/home.css")
+    
+block main
+    header
+        .container
+            h1 HOME IS LIFE
+            p We built embark through embik
+
+    section.hero
+        .container
+            .hero-content
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                a.btn(href="#") Become Volunteer
+            .hero-content
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                a.btn(href="#") Donate Now
+
+    section.causes
+        .container
+            h2 OUR CAUSES
+            a.view-all(href="#") View All Cause
+            .causes-grid
+                .cause
+                    img(src="https://picsum.photos/300/200" alt="Cause 1")
+                    h3 Charity
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et, accumsan turpis.
+                    a.btn(href="#") Donate Now
+                .cause
+                    img(src="https://picsum.photos/300/200" alt="Cause 2")
+                    h3 Starving
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
+                    a.btn(href="#") Donate Now
+                .cause
+                    img(src="https://picsum.photos/300/200" alt="Cause 3")
+                    h3 Homeless
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
+                    a.btn(href="#") Donate Now

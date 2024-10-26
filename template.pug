@@ -8,15 +8,15 @@ html(lang="en")
         link(rel="stylesheet", href="web_templating/component/css/menu.css")
         link(rel="stylesheet", href="web_templating/component/css/nav.css")
         link(rel="stylesheet", href="web_templating/component/css/footer.css")
-        title tytyd
+
+        block head
+        title Home is Life 
     body        
         block menu
             +menu
 
-        // Pastikan konten lainnya di sini, misalnya:
-        main
-            h1 Welcome to the Site
-            p This is some content above the footer.
+        block main
+            // Konten utama halaman akan diisi di sini
 
         block footer
             +footer
