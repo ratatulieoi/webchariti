@@ -1,4 +1,5 @@
-include web_templating/component/pug/_component.pug
+include web_templating/component/pug/_menu.pug
+include web_templating/component/pug/_footer.pug
 doctype html
 html(lang="en")
     head
@@ -6,19 +7,16 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="web_templating/component/css/menu.css")
         link(rel="stylesheet", href="web_templating/component/css/nav.css")
-        link(rel="stylesheet", href="web_templating/component/css/shop.css")
-        link(rel="stylesheet", href="web_templating/component/css/button.css")
         link(rel="stylesheet", href="web_templating/component/css/footer.css")
-        link(rel="stylesheet", href="web_templating/component/css/volunteer.css")
         title tytyd
     body        
         block menu
             +menu
-        block shop
-            +shop
-        block button
-            +button
+
+        // Pastikan konten lainnya di sini, misalnya:
+        main
+            h1 Welcome to the Site
+            p This is some content above the footer.
+
         block footer
             +footer
-        block volunteer
-            +volunteer
