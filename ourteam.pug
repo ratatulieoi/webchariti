@@ -1,0 +1,36 @@
+extends template.pug 
+
+block head 
+    link(rel="stylesheet" href="web_templating/csshalaman/ourteam.css")
+    
+block main 
+    .header
+        h1 Our Team
+
+    .content
+        h2 Our Team
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo.
+
+        .team
+        each member in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+            .team-member
+            img(src="https://storage.googleapis.com/a1aa/image/F3VNrV4yeHSLVakoIwSp1EVyKnWIGHjEwuHLe6x4mhTItUrTA.jpg", alt="Team member photo", width="200", height="200")
+            h3 DRS. NAME NAME
+            p Position
+            .social-icons
+                a(href="#")
+                i.fab.fa-facebook-f
+                a(href="#")
+                i.fab.fa-twitter
+                a(href="#")
+                i.fab.fa-instagram
+                a(href="#")
+                i.fab.fa-linkedin-in
+
+        .view-all
+        button View All
+
+    .involved
+        h2 Want to get involved?
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo. Nam sit amet lorem non nisi aliquet ornare. Nunc eget volutpat magna. Nam commodo dui eget eros placerat porta. Aenean rutrum ligula ac neque tempor, facilisis aliquam quam sagittis.
+        button Become a Volunteer

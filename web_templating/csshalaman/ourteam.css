@@ -1,0 +1,112 @@
+
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .header {
+            background-image: url('https://placehold.co/1920x400');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 0;
+            color: #fff;
+        }
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        .team-member {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1 1 calc(20% - 20px); /* Mengatur agar setiap kartu mengambil sekitar 20% dari lebar */
+            max-width: calc(20% - 20px); /* Membatasi lebar maksimum setiap kartu */
+            box-sizing: border-box; /* Memastikan padding tidak menambah lebar kartu */
+        }
+        
+        
+        .team-member img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .team-member h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+        .team-member p {
+            font-size: 14px;
+            color: #00ff00;
+            margin: 0 0 10px;
+        }
+        .team-member .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .team-member .social-icons a {
+            color: #fff;
+            font-size: 16px;
+        }
+        .view-all {
+            margin: 40px 0;
+        }
+        .view-all button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .involved {
+            background-color: #00ff00;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .involved h2 {
+            font-size: 36px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .involved p {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #000;
+        }
+        .involved button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+  

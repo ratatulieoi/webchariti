@@ -1,1 +1,138 @@
-extends _template.pug
+extends template.pug
+
+
+block head
+    link(rel="stylesheet" href="web_templating/csshalaman/home.css")
+    
+block main
+    header
+        .container
+            h1 HOME IS LIFE
+            p We built embark through embik
+
+    section.hero
+        .container
+            .hero-content
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                a.btn(href="#") Become Volunteer
+            .hero-content
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                a.btn(href="#") Donate Now
+
+    section.causes
+        .container
+            h2 OUR CAUSES
+            a.view-all(href="#") View All Cause
+            .causes-grid
+                .cause
+                    img(src="https://picsum.photos/300/200" alt="Cause 1")
+                    h3 Charity
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et, accumsan turpis.
+                    a.btn(href="#") Donate Now
+                .cause
+                    img(src="https://picsum.photos/300/200" alt="Cause 2")
+                    h3 Starving
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
+                    a.btn(href="#") Donate Now
+                .cause
+                    img(src="https://picsum.photos/300/200" alt="Cause 3")
+                    h3 Homeless
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
+                    a.btn(href="#") Donate Now
+
+        img(src="https://storage.googleapis.com/a1aa/image/KMIMhluiPDKfRaZZdrKp9HlhbfGwfCXK4NEsICM9IfzVlTtOB.jpg", alt="Group of people standing together", width="1200", height="400")
+        .text-block
+        h1 Who are we?
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        a.btn(href="#") Learn More
+
+        img(src="https://storage.googleapis.com/a1aa/image/PHGyUzsZvQZMLVf5nNaWaSfN8fbtnNvVLCyVeflINyGoJnadC.jpg", alt="Group of people raising hands", width="1200", height="400")
+        .text-block
+        h1 What are we?
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        a.btn(href="#") Learn More
+
+    .stats
+        .stat
+        i.fas.fa-users
+        h3 30M
+        p Number of Supporters
+        .stat
+        i.fas.fa-dollar-sign
+        h3 $100M
+        p Fund Raised
+        .stat
+        i.fas.fa-child
+        h3 20M
+        p Children Helped
+        .stat
+        i.fas.fa-hands-helping
+        h3 18,000
+        p Volunteers Worldwide
+
+    .news-updates
+        h2 News & Updates
+        a.btn(href="#") Learn More
+        .news-grid
+        .news-item
+            img(src="https://storage.googleapis.com/a1aa/image/ehfilAxxwTke3p2KaxfRWSj0KKHK1Iy4fp92tA4kxL7PKnadC.jpg", alt="Person with colorful face paint", width="400", height="300")
+            h3 Partnering to create a community
+        .news-item
+            img(src="https://storage.googleapis.com/a1aa/image/cMu6YFIUpbbeAy6jkxgqnLH533KOztayvnfnntXwqhaO5UrTA.jpg", alt="Hands holding each other", width="400", height="300")
+            h3 Turning your emergency donation into instant aid
+        .news-item
+            img(src="https://storage.googleapis.com/a1aa/image/dqUyBkQXuhIiAVev0R5geVEt5Qr1JKJqYkbPJ68KDXAW5UrTA.jpg", alt="Protest signs", width="400", height="300")
+            h3 Our 10 Favourite ClimateStrike protest signs
+        .news-item
+            img(src="https://storage.googleapis.com/a1aa/image/8IQkjK1nGPafQSK68eM4kQDIibjNhkUar2M9ifqZJeoLlTtOB.jpg", alt="Person holding a sign", width="400", height="300")
+            h3 $50,000 of us went on Climate Strike - now what?
+        .news-item
+            img(src="https://storage.googleapis.com/a1aa/image/tee2VSBfvjZF4pEReFwIz4aWrdE0wrdTyLtvnGDYgwCeJnadC.jpg", alt="Person smiling", width="400", height="300")
+            h3 Best & Less published their supplier lists
+        .news-item
+            img(src="https://storage.googleapis.com/a1aa/image/ze4tVgeq6zhNDEnIzrUQvjEU56BRzYrkKTAh70Yf30NpypWnA.jpg", alt="Worker in a factory", width="400", height="300")
+            h3 David Jones and Country Road support worker safety
+        .container
+            .upcoming-event
+            h1 Upcoming Event
+            button.more-event More Event
+            .event-details
+                img(src="https://storage.googleapis.com/a1aa/image/llEKIE6l3CbxJB8EvL98c0HvFPOGNE6VLzklpiYJCsh4P16E.jpg", alt="People carrying boxes", width="200", height="200")
+                .event-info
+                div
+                    span 3
+                    span Lorem Ipsum
+                div
+                    span 12
+                    span Lorem Ipsum
+                div
+                    span 2
+                    span Lorem Ipsum
+
+            .staff-section
+    h2 Our Staff
+    .staff-list
+        each member in [1, 2, 3, 4] 
+            .staff-member
+                img(
+                    src="https://storage.googleapis.com/a1aa/image/flRlUbHLk7XjOCfJ23IecOgs2vPoJdaqgpVD88qXtM4AfTtOB.jpg", 
+                    alt="Staff member", 
+                    width="200", 
+                    height="200"
+                )
+                .staff-info
+                    span Staff Name
+                    span Position
+    button.new-staff New Staff
+
+            .gallery-section
+    h2 Gallery
+    .gallery-list
+        each item in [1, 2, 3, 4, 5, 6] 
+            .gallery-item
+                img(
+                    src="https://storage.googleapis.com/a1aa/image/QQelPx36mJy1XSFWLYiWvdA2sAZpGeIPOS8sdeASapJDfTtOB.jpg", 
+                    alt="Gallery item", 
+                    width="100", 
+                    height="100"
+                )

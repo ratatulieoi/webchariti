@@ -1,0 +1,301 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 2366px;
+    margin: 0 auto;
+    font-size: 0px;
+    background: #192524;
+    overflow: hidden;
+  }
+  .make-donation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 644px;
+    height: 166px;
+    margin: 206px 0 0 398px;
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: center;
+    z-index: 1;
+  }
+  .flex-row-a {
+    position: relative;
+    width: 1440px;
+    height: 629px;
+    margin: 128px 0 0 0;
+    z-index: 53;
+  }
+  .rectangle {
+    position: absolute;
+    width: 1440px;
+    height: 268px;
+    top: 0;
+    left: 0;
+    background: rgba(209, 235, 219, 0.6);
+    z-index: 2;
+  }
+  .image {
+    position: absolute;
+    width: 310px;
+    height: 170px;
+    top: 49px;
+    left: 120px;
+    background: url(./assets/images/cdb36728e181c4e603f72f3c1f7f762ebfdb8a64.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 5;
+  }
+  .donating-to {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: 49px;
+    left: 452px;
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 275;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+  }
+  .education-need {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 22px;
+    top: 65px;
+    left: 452px;
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .donation-amount {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 21px;
+    top: 104px;
+    left: 452px;
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  .line {
+    position: absolute;
+    width: 325px;
+    height: 5px;
+    top: 131.5px;
+    left: 449.5px;
+    background: url(./assets/images/ac199fb1-94ce-4ebc-9b0c-a0f0ff01faf6.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 37;
+  }
+  .line-1 {
+    position: relative;
+    width: 265.5px;
+    height: 5px;
+    margin: 0 0 0 0;
+    background: url(./assets/images/84dd160f-d43f-4a64-9b1e-49fd4064de25.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 38;
+  }
+  .goal-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 89px;
+    height: 15px;
+    top: 137px;
+    left: 683px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 15px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 40;
+  }
+  .donated-percentage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 68px;
+    height: 15px;
+    top: 137px;
+    left: 452px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 15px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 39;
+  }
+  .rectangle-2 {
+    position: absolute;
+    width: 415px;
+    height: 495px;
+    top: 134px;
+    left: 885px;
+    font-size: 0px;
+    background: url(./assets/images/dfefef81-d60d-48e4-9e47-d985d3e1cac4.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 4;
+  }
+  .select-donation-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 240px;
+    height: 35px;
+    margin: 27px 0 0 86px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    text-align: center;
+    z-index: 13;
+  }
+  .flex-row-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 235px;
+    height: 28px;
+    margin: 10px 0 0 90px;
+    z-index: 22;
+  }
+  .rectangle-3 {
+    flex-shrink: 0;
+    position: relative;
+    width: 39px;
+    height: 28px;
+    border: 1px solid #066222;
+    z-index: 14;
+    border-radius: 3px;
+  }
+  .amount-10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 30px;
+    height: 11px;
+    top: 7px;
+    left: 4px;
+    color: #000000;
+    font-family: Jaro, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 15;
+  }
+  .rectangle-4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 39px;
+    height: 28px;
+    border: 1px solid #066222;
+    z-index: 16;
+    border-radius: 3px;
+  }
+  .amount-20 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 30px;
+    height: 11px;
+    top: 7px;
+    left: 4px;
+    color: #000000;
+    font-family: Jaro, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 17;
+  }
+  .rectangle-5 {
+    flex-shrink: 0;
+    position: relative;
+    width: 39px;
+    height: 28px;
+    border: 1px solid #066222;
+    z-index: 18;
+    border-radius: 3px;
+  }
+  .amount-30 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 30px;
+    height: 11px;
+    top: 7px;
+    left: 4px;
+    color: #000000;
+    font-family: Jaro, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: center;
+    white-space: nowrap;
+  }

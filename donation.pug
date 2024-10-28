@@ -1,0 +1,78 @@
+extends template.pug 
+
+block head 
+     link(rel="stylesheet", href="web_templating/csshalaman/donation.css")
+     title donation
+block main
+    .main-container
+      span.make-donation Make a Donation
+      
+      .flex-row-a
+        .rectangle
+          .image
+          span.donating-to you’re donating to :
+          span.education-need Education Need
+          span.donation-amount $27.000
+          .line
+            .line-1
+          span.goal-amount Goal : $30,000.00
+          span.donated-percentage 92% Donated
+          
+        .rectangle-2
+          span.select-donation-amount Select Donation Amount
+          .flex-row-c
+            .rectangle-3
+              span.amount-10 10
+            .rectangle-4
+              span.amount-20 20
+            .rectangle-5
+              span.amount-30 30
+            .rectangle-6
+              span.amount-40 40
+            button.rectangle-7
+              span.amount-50 50
+          span.other-amount Other Amount (USD)
+          .line-8
+          span.payment-method Payment Method
+          .flex-row-efb
+            button.rectangle-9
+              span.paypal PayPal
+            button.rectangle-a
+              span.credit-card Credit Card
+          .image-b
+          button.button
+            span.button-c DONATE NOW
+            
+      span.login-to-donate Login to Donate
+      .rectangle-d
+        span.email Email*
+      .rectangle-e
+        span.password-field Password*
+      button.button-f
+        span.sign-in-button SIGN IN !
+      .image-10
+      span.account-info With an account, you will be able to view your past contributions and follow favourite projects.
+      .line-11
+
+      span.no-account-donation Or donate without an account
+      span.personal-details Personal Details
+      
+      .flex-row-ac
+        .rectangle-12
+          span.first-name-field First Name*
+        .rectangle-13
+          span.last-name Last Name*
+      .flex-row-cbe
+        .rectangle-14
+          span.email-15 Email*
+        .rectangle-16
+          span.phone Phone*
+      .line-17
+      .our-promise
+        span.our-promise-to-you Our Promise to You
+        br
+        br
+        span.without-your-support Without your loyal support, we couldn’t do the vital work we do. That’s why we promise to uphold the highest ethical standards. You can send through any feedback or grievances here.
+      .image-18
+
+
