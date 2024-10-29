@@ -7,26 +7,25 @@ nav {
   margin: 0 auto;
   width: 100%;
   height: auto;
-  display: flex; /* Mengganti inline-block dengan flex */
+  display: flex;
   background: #37bc9b;
-  justify-content: flex-start; /* Untuk mengatur elemen ke kiri */
+  justify-content: flex-start;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex; /* Mengganti float dan inline-block dengan flex */
+  display: flex;
 }
 
 nav ul li {
   position: relative;
   margin: 0 20px 0 0;
-  display: flex; /* Menghilangkan float */
 }
 
 li > a:after {
-  content: ' »'; /* Mengubah simbol dropdown */
+  content: ' »';
 }
 
 li > a:only-child:after {
@@ -49,6 +48,8 @@ nav ul li ul {
   position: absolute;
   left: 0;
   background: #37bc9b;
+  flex-direction: column;
+  min-width: 100px;
 }
 
 nav ul li ul li {
@@ -56,6 +57,7 @@ nav ul li ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+nav ul li:focus-within ul,
 nav ul li:hover ul {
   display: block;
 }
