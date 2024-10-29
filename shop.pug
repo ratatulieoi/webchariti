@@ -1,0 +1,20 @@
+extends template.pug
+include web_templating/component/pug/_shop.pug
+
+block head
+    link(rel="stylesheet", href="web_templating/csshalaman/shop.css")
+    link(rel="stylesheet", href="web_templating/component/css/shop.css")
+
+block main
+    header
+        .judul
+            h1 Shop
+            
+    .container
+        .product-container
+            +shop
+            +shop
+            +shop
+            +shop
+            +shop
+            +shop

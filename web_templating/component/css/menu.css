@@ -1,12 +1,15 @@
 body{ margin:0; font-family:'tahoma'}
 
 nav {
-  margin:0 auto;
-  width:100%;
-  height:auto;
-  display:inline-block;
-  background:#37bc9b;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  background: #37bc9b;
+  position: relative; /* Atau gunakan fixed jika ingin navbar tetap di atas saat menggulir */
+  z-index: 1000; /* Set z-index untuk memastikan navbar di depan elemen lain */
 }
+
 
 nav ul {
   margin:0;padding:0;
