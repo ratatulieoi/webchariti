@@ -1,0 +1,319 @@
+.image-icon {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 90rem;
+    height: 31.25rem;
+    object-fit: cover;
+}
+.contact1 {
+    position: absolute;
+    top: 14.313rem;
+    left: 36.688rem;
+    font-size: 4rem;
+    display: inline-block;
+    font-family: var(--font-poppins);
+    width: 16.688rem;
+    height: 4.75rem;
+}
+.contact-child {
+    position: absolute;
+    top: 31.25rem;
+    left: -0.125rem;
+    background-color: #090808;
+    width: 89.938rem;
+    height: 22.5rem;
+}
+.b {
+    position: absolute;
+    top: 47.063rem;
+    left: 16.625rem;
+    display: inline-block;
+    width: 8.125rem;
+    height: 1.063rem;
+}
+.b1 {
+    position: absolute;
+    top: 47.063rem;
+    left: 38.688rem;
+    display: inline-block;
+    width: 8.125rem;
+    height: 1.063rem;
+}
+.b2 {
+    position: absolute;
+    top: 47.063rem;
+    left: 61.688rem;
+    display: inline-block;
+    width: 8.125rem;
+    height: 1.063rem;
+}
+.a-wonderful-serenity {
+    position: absolute;
+    top: 43.313rem;
+    left: 16.625rem;
+    display: inline-block;
+    width: 17.188rem;
+    height: 2.125rem;
+}
+.a-wonderful-serenity1 {
+    position: absolute;
+    top: 43.5rem;
+    left: 38.688rem;
+    display: inline-block;
+    width: 17.188rem;
+    height: 2.125rem;
+}
+.a-wonderful-serenity2 {
+    position: absolute;
+    top: 43.313rem;
+    left: 61.688rem;
+    display: inline-block;
+    width: 17.188rem;
+    height: 2.125rem;
+}
+.phone {
+    position: absolute;
+    top: 39.875rem;
+    left: 17rem;
+    font-size: var(--font-size-5xl);
+}
+.email {
+    position: absolute;
+    top: 39.875rem;
+    left: 38.688rem;
+    font-size: var(--font-size-5xl);
+}
+.location {
+    position: absolute;
+    top: 39.875rem;
+    left: 61.688rem;
+    font-size: var(--font-size-5xl);
+}
+.phone-icon {
+    position: absolute;
+    top: 35.563rem;
+    left: 17rem;
+    width: 2.813rem;
+    height: 2.813rem;
+    overflow: hidden;
+}
+.mail-icon {
+    position: absolute;
+    top: 35.438rem;
+    left: 39.438rem;
+    width: 2.813rem;
+    height: 2.813rem;
+    overflow: hidden;
+}
+.contact-item {
+    position: absolute;
+    top: 36rem;
+    left: 57.375rem;
+    width: 3.688rem;
+    height: 2.375rem;
+}
+.contact-inner {
+    position: absolute;
+    top: 36.092rem;
+    left: 61.938rem;
+    width: 2.125rem;
+    height: 1.756rem;
+    object-fit: contain;
+}
+.rectangle-div {
+    position: absolute;
+    top: 61.125rem;
+    left: 14rem;
+    width: 62.063rem;
+    height: 45rem;
+}
+.frame-child {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background-color: #f8f8f8;
+    width: 50rem;
+    height: 3.938rem;
+}
+.frame-div {
+    position: absolute;
+    top: 68.25rem;
+    left: 20.063rem;
+    width: 49.938rem;
+    height: 3.938rem;
+}
+.frame-item {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background-color: var(--color-whitesmoke-100);
+    width: 50rem;
+    height: 3.938rem;
+}
+.email1 {
+    position: absolute;
+    top: 0rem;
+    left: 2.625rem;
+    display: flex;
+    align-items: center;
+    width: 6.063rem;
+    height: 3.938rem;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 73.938rem;
+    left: 20.063rem;
+    width: 49.938rem;
+    height: 3.938rem;
+    font-size: var(--font-size-lg);
+    color: var(--color-darkgray);
+}
+.email2 {
+    position: absolute;
+    top: 0rem;
+    left: 2.688rem;
+    display: flex;
+    align-items: center;
+    width: 6.063rem;
+    height: 3.938rem;
+}
+.rectangle-group {
+    position: absolute;
+    top: 79.313rem;
+    left: 20.063rem;
+    width: 49.938rem;
+    height: 3.875rem;
+    font-size: var(--font-size-lg);
+    color: var(--color-darkgray);
+}
+.frame-child1 {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background-color: var(--color-whitesmoke-100);
+    width: 50rem;
+    height: 12.438rem;
+}
+.message {
+    position: absolute;
+    top: 0rem;
+    left: 2.813rem;
+    display: flex;
+    align-items: center;
+    width: 6.063rem;
+    height: 3.938rem;
+}
+.rectangle-container {
+    position: absolute;
+    top: 84.625rem;
+    left: 20.063rem;
+    width: 49.938rem;
+    height: 12.313rem;
+    font-size: var(--font-size-lg);
+    color: var(--color-darkgray);
+}
+.full-name {
+    position: absolute;
+    top: 68.25rem;
+    left: 22.688rem;
+    font-size: var(--font-size-lg);
+    display: flex;
+    color: var(--color-darkgray);
+    align-items: center;
+    width: 6.125rem;
+    height: 3.938rem;
+}
+.button1 {
+    position: relative;
+}
+.button {
+    position: absolute;
+    top: 99.375rem;
+    left: 20.063rem;
+    background-color: #f27676;
+    width: 49.938rem;
+    height: 3.188rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1.75rem;
+    box-sizing: border-box;
+    text-align: center;
+    color: #000;
+    font-family: var(--font-poppins);
+}
+.leave-us-your {
+    position: absolute;
+    top: 58.375rem;
+    left: 34.875rem;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.and-we-will {
+    position: absolute;
+    top: 63rem;
+    left: 37.438rem;
+    font-size: var(--font-size-lg);
+}
+.map {
+    position: absolute;
+    top: 108.375rem;
+    left: -0.062rem;
+    width: 89.938rem;
+    height: 41.063rem;
+    overflow: hidden;
+}
+.image-2-icon {
+    position: absolute;
+    top: 112.875rem;
+    left: -0.062rem;
+    width: 90.063rem;
+    height: 32.125rem;
+    object-fit: cover;
+}
+.mail-icon1 {
+    position: absolute;
+    top: 152.438rem;
+    left: 34.125rem;
+    width: 2.375rem;
+    height: 2.375rem;
+    overflow: hidden;
+}
+.facebook-icon {
+    position: absolute;
+    top: 152.125rem;
+    left: 40.5rem;
+    width: 2.688rem;
+    height: 2.688rem;
+    overflow: hidden;
+}
+.twitter-icon {
+    position: absolute;
+    top: 152.438rem;
+    left: 46.625rem;
+    width: 2.375rem;
+    height: 2.375rem;
+    overflow: hidden;
+}
+.instagram-icon {
+    position: absolute;
+    top: 152.438rem;
+    left: 53rem;
+    width: 2.375rem;
+    height: 2.375rem;
+    overflow: hidden;
+}
+.contact {
+    width: 100%;
+    position: relative;
+    background-color: #192524;
+    height: 195.938rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+}
+
