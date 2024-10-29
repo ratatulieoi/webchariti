@@ -1,0 +1,185 @@
+body {
+    background-color: #192524; /* Warna latar belakang untuk seluruh halaman */
+}
+
+.image-icon {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.2;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    max-width: 60rem;
+    padding: 2rem;
+    gap: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background-color: #3C5759;
+    position: relative; /* Tambahkan ini untuk mengatur posisi relatif */
+}
+
+.image-overlay {
+    position: relative; /* Mengatur posisi relatif untuk overlay */
+}
+
+.article-image {
+    width: 475px; /* Lebar gambar */
+    height: 310px; /* Tinggi gambar */
+    object-fit: cover; /* Memastikan gambar terjaga proporsinya */
+    position: absolute; /* Memposisikan gambar secara absolut */
+    right: 0; /* Memposisikan gambar ke kanan */
+    top: 50%; /* Memposisikan gambar ke tengah secara vertikal */
+    transform: translateY(-50%); /* Memindahkan gambar agar benar-benar di tengah */
+    z-index: 1; /* Menempatkan gambar di atas layer lainnya */
+}
+
+.card-content {
+    position: relative; /* Membuat konten menjadi posisi relatif untuk overlay */
+    z-index: 2; /* Menempatkan konten di atas gambar */
+}
+
+.card-content figcaption {
+    padding-right: 500px; /* Menambahkan padding untuk memberi ruang untuk gambar */
+}
+
+/* Tambahkan gaya overlay */
+.image-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Warna overlay dengan transparansi */
+    z-index: 0; /* Menempatkan overlay di bawah konten dan gambar */
+}
+
+/* Mengatur kontainer parent untuk menyusun kontainer secara horizontal */
+.container-parent {
+    display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+    justify-content: center; /* Menyusun kontainer ke tengah */
+    gap: 20px; /* Jarak antar kontainer */
+    margin-top: 2rem; /* Jarak atas dari elemen sebelumnya */
+    width: 100%;
+}
+
+/* Kontainer 1-4 */
+.container1, .container2, .container3, .container4 {
+    display: flex;
+    flex-direction: column; /* Menempatkan ikon di atas teks */
+    align-items: center; /* Mengatur konten ke tengah */
+    text-align: center; /* Menengahkan teks */
+    padding: 1rem; /* Jarak di dalam kontainer */
+    background-color: #192524; /* Warna latar belakang */
+    min-width: 150px; /* Lebar minimum untuk kontainer */
+    position: relative; /* Mengatur posisi relatif untuk elemen di dalam */
+}
+
+/* Styling untuk ikon dan teks dalam setiap kontainer */
+.container img {
+    width: 60px; /* Lebar ikon */
+    height: 60px; /* Tinggi ikon */
+    margin-bottom: 0.5rem; /* Jarak di bawah ikon */
+}
+
+.heading-3, .heading-31, .heading-32, .heading-33 {
+    font-size: 24px; /* Ukuran font heading */
+    line-height: 1.5; /* Tinggi baris */
+    font-weight: bold; /* Berat font */
+    text-transform: uppercase; /* Mengubah huruf menjadi kapital */
+    margin: 0; /* Menghapus margin */
+}
+
+.number-of-supporters, .fund-raised, .children-helped, .volunteers-worldwide {
+    font-size: 17px; /* Ukuran font untuk teks dukungan */
+    color: #919191; /* Warna teks */
+    margin-top: 5px; /* Jarak atas */
+}
+
+/* Styling untuk teks tambahan di bawah setiap kontainer */
+.text-frame {
+    margin-top: 10px; /* Jarak atas dari konten utama di kontainer */
+    padding: 10px; /* Jarak di dalam frame */
+    font-size: 14px; /* Ukuran font untuk teks dalam frame */
+    text-align: center; /* Rata tengah untuk teks */
+    color: #fff;
+}
+
+.group-parent {
+    width: 100%; /* Lebar grup parent */
+    position: relative; /* Posisi relatif */
+    padding: 2rem 0; /* Jarak vertikal */
+    text-align: left; /* Rata kiri */
+    font-size: 16px; /* Ukuran font */
+    color: #fff; /* Warna teks */
+    font-family: Poppins; /* Jenis font */
+}
+
+.new-image {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.2;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.image-frame {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    margin-top: 2rem;
+}
+
+.new-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.overlay-title {
+    position: absolute;
+    top: 35%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 1rem;
+    font-size: 20px;
+    text-align: center;
+    max-width: 80%;
+}
+
+
+.overlay-text,
+.overlay-text2 {
+    position: absolute; 
+    color: white;
+    padding: 1rem;
+    max-width: 45%;
+}
+
+.overlay-text {
+    top: 50%;
+    left: 1%; 
+    transform: translateY(-50%);
+}
+
+.overlay-text2 {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%)
+}

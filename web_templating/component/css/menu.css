@@ -1,55 +1,61 @@
-body{ margin:0; font-family:'tahoma'}
+body {
+  margin: 0;
+  font-family: 'Tahoma';
+}
 
 nav {
-  margin:0 auto;
-  width:100%;
-  height:auto;
-  display:inline-block;
-  background:#37bc9b;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex; /* Mengganti inline-block dengan flex */
+  background: #37bc9b;
+  justify-content: flex-start; /* Untuk mengatur elemen ke kiri */
 }
 
 nav ul {
-  margin:0;padding:0;
-  list-style-type:none;
-  float:left;
-  display:inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex; /* Mengganti float dan inline-block dengan flex */
 }
 
 nav ul li {
-  position:relative;
-  margin:0 20px 0 0;
-  float:left;
-  display:inline-block;
+  position: relative;
+  margin: 0 20px 0 0;
+  display: flex; /* Menghilangkan float */
 }
 
-li > a:after { content: ' »'; } /* Change this in order to change the Dropdown symbol */
+li > a:after {
+  content: ' »'; /* Mengubah simbol dropdown */
+}
 
-li > a:only-child:after { content: ''; }
+li > a:only-child:after {
+  content: '';
+}
 
 nav ul li a {
-  padding:20px;
-  display:inline-block;
-  color:white;
-  text-decoration:none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
-  opacity:0.5;
+  opacity: 0.5;
 }
 
 nav ul li ul {
-  display:none;
-  position:absolute;
-  left:0;
-  background:#37bc9b;
-  float:left;
+  display: none;
+  position: absolute;
+  left: 0;
+  background: #37bc9b;
 }
 
 nav ul li ul li {
-  width:100%;
-  border-bottom:1px solid rgba(255,255,255,.3);
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 nav ul li:hover ul {
-  display:block;
+  display: block;
 }
