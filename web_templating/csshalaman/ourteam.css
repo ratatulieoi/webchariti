@@ -31,23 +31,30 @@
             max-width: 800px;
             margin: 0 auto 40px;
         }
-        .team {
-            display: flex;
-            flex-wrap: nowrap; /* Membuat baris baru jika diperlukan */
-            gap: 20px;
-            justify-content: center;
+        .container-team {
+            background-color: #ff0000;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding: 20px; /* Tambahkan padding jika diperlukan */
         }
         
-                
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Membuat kolom otomatis dengan lebar minimum 200px */
+            gap: 20px; /* Jarak antara kartu */
+            justify-content: center;
+            align-items: center;
+        }
+        
         .team-member {
-    min-width: 200px; /* Mengatur lebar minimum setiap kartu agar terpisah */
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    flex-shrink: 0; /* Mencegah kartu mengecil saat layar kecil */
-    box-sizing: border-box;
-}
+            background-color: white; /* Tambahkan warna latar untuk kartu, jika diperlukan */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+            text-align: center;
+        }
+        
         
         .team-member img {
             width: 100%;
