@@ -1,5 +1,6 @@
 body {
     background-color: #192524;
+    margin: 0;
 }
 
 .image-iconback {
@@ -37,7 +38,7 @@ body {
 .our-team-child {
     position: absolute;
     top: 2015px;
-    left: 633px;
+    left: 940px;
     border-radius: 50%;
     background-color: #94fba7;
     width: 175px;
@@ -46,7 +47,7 @@ body {
 .volunteer-child {
     position: absolute;
     top: 24px;
-    left: 18px;
+    left: 25px;
     border-radius: 20px;
     width: 215px;
     height: 198px;
@@ -54,7 +55,7 @@ body {
 .image-1-icon {
     position: absolute;
     top: 0px;
-    left: -9px;
+    left: 0px;
     width: 260px;
     height: 374px;
     object-fit: cover;
@@ -93,8 +94,8 @@ body {
 }
 .volunteer {
     position: absolute;
-    top: 783px;
-    left: 105px;
+    top: 410px;
+    left: 565px;
     border-radius: 14px;
     background-color: #fff;
     width: 251px;
@@ -104,7 +105,7 @@ body {
 .volunteer1 {
     position: absolute;
     top: 1294px;
-    left: 108px;
+    left: 1050px;
     border-radius: 14px;
     background-color: #fff;
     width: 251px;
@@ -113,8 +114,8 @@ body {
 }
 .volunteer2 {
     position: absolute;
-    top: 783px;
-    left: 445px;
+    top: 410px;
+    left: 879px;
     border-radius: 14px;
     background-color: #fff;
     width: 251px;
@@ -123,8 +124,8 @@ body {
 }
 .volunteer3 {
     position: absolute;
-    top: 1294px;
-    left: 448px;
+    top: 410px;
+    left: 1185px;
     border-radius: 14px;
     background-color: #fff;
     width: 251px;
@@ -133,8 +134,8 @@ body {
 }
 .volunteer4 {
     position: absolute;
-    top: 783px;
-    left: 785px;
+    top: 900px;
+    left: 565px;
     border-radius: 14px;
     background-color: #fff;
     width: 251px;
@@ -143,8 +144,8 @@ body {
 }
 .volunteer5 {
     position: absolute;
-    top: 1294px;
-    left: 788px;
+    top: 900px;
+    left: 880px;
     border-radius: 14px;
     background-color: #fff;
     width: 251px;
@@ -153,8 +154,8 @@ body {
 }
 .volunteer6 {
     position: absolute;
-    top: 783px;
-    left: 1125px;
+    top: 900px;
+    left: 1190px;
     border-radius: 14px;
     background-color: #fff;
     width: 251px;
@@ -164,7 +165,7 @@ body {
 .volunteer7 {
     position: absolute;
     top: 1294px;
-    left: 1128px;
+    left: 720px;
     border-radius: 14px;
     background-color: #fff;
     width: 251px;
@@ -173,8 +174,8 @@ body {
 }
 .lorem-ipsum-dolor {
     position: absolute;
-    top: 573px;
-    left: 636px;
+    top: 80px;
+    left: 950px;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -183,8 +184,8 @@ body {
 }
 .our-team1 {
     position: absolute;
-    top: 573px;
-    left: 102px;
+    top: 70px;
+    left: 610px;
     font-size: 70px;
     font-weight: 800;
     display: flex;
@@ -194,8 +195,8 @@ body {
 }
 .our-team-item {
     position: absolute;
-    top: 698.5px;
-    left: 170.5px;
+    top: 165px;
+    left: 580px;
     border-top: 3px solid #fff;
     box-sizing: border-box;
     width: 345px;
@@ -204,7 +205,7 @@ body {
 .want-to-get {
     position: absolute;
     top: 2004px;
-    left: 336px;
+    left: 603px;
     font-size: 70px;
     font-weight: 800;
     font-family: Poppins;
@@ -239,7 +240,7 @@ body {
 .lorem-ipsum-dolor1 {
     position: absolute;
     top: 2190px;
-    left: 0px;
+    left: 270px;
     font-size: 27px;
     font-weight: 300;
     font-family: Poppins;
@@ -256,7 +257,7 @@ body {
 .button2 {
     position: absolute;
     top: 1771px;
-    left: 679px;
+    left: 950px;
     background-color: #f27676;
     width: 114px;
     height: 52px;
@@ -650,15 +651,16 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 1440px;
-    height: 3337px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+    margin: 0;
 }
 .our-team-parent {
     width: 100%;
     position: relative;
-    height: 3337px;
-    text-align: left;
+    height: 2940px;
+    text-align: center;
     font-size: 15px;
     color: #fff;
     font-family: Inter;
