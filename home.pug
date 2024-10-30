@@ -1,41 +1,229 @@
-extends template.pug
+extends template.pug 
 
+block head 
+    link(rel="stylesheet", href="web_templating/csshalaman/home.css")
 
-block head
-    link(rel="stylesheet" href="web_templating/csshalaman/home.css")
-    
 block main
-    header
+    img.image-icon(src="web_templating/image/galeribackground2.png", alt="event")
+    b.b3 HomePages
+    
+    .home-page
+        .home-page-child
+            .home-page-item
+                .image
+                    img.home-page-inner(alt="", src="Rectangle 18.svg")
+                    img.image-icon(alt="", src="image.png")
+                .rectangle-parent
+                    .group-child
+                        i.donate-now(id="dONATENOW") DONATE NOW -&gt;
+                    i.lorem-ipsum-dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    i.lorem-ipsum-dolor1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    i.become-volunteer(id="bECOMEVOLUNTEER") BECOME VOLUNTEER -&gt;
+                    i.our-causes OUR CAUSES
+        
+        .home-article
+            .home-article-child
+                img.image-icon1(alt="", src="image.png")
+                i.charity Charity
+                .lorem-ipsum-dolor2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et, accumsan turpis. 
+        
+        .donation-home
+            img.donation-home-child(alt="", src="Rectangle 21.svg")
+            img.image-icon2(alt="", src="image.png")
+            b.lolipop LOLIPOP 
+            .lorem-ipsum-dolor3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
+        
+        .donation-home1
+            img.donation-home-child(alt="", src="Rectangle 21.svg")
+            img.image-icon2(alt="", src="image.png")
+            b.covid-25 COVID-25
+            .lorem-ipsum-dolor4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
+        
+        .donation-home2
+            img.donation-home-child(alt="", src="Rectangle 21.svg")
+            img.image-icon2(alt="", src="image.png")
+            b.lolipop STARVING
+            .lorem-ipsum-dolor5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
+        
+        img.image-icon5(alt="", src="image.png")
+        img.image-icon6(alt="", src="image.png")
+        
+        .our-story- Our Story _
+        .what-are-we What are we?
+        
+        .button
+            b.button1 View All Cause
+        
+        .who-are-we Who are we?
+        .our-story-1 Our Story _
+        
         .container
-            h1 HOME IS LIFE
-            p We built embark through embik
-
-    section.hero
-        .container
-            .hero-content
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                a.btn(href="#") Become Volunteer
-            .hero-content
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                a.btn(href="#") Donate Now
-
-    section.causes
-        .container
-            h2 OUR CAUSES
-            a.view-all(href="#") View All Cause
-            .causes-grid
-                .cause
-                    img(src="https://picsum.photos/300/200" alt="Cause 1")
-                    h3 Charity
-                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et, accumsan turpis.
-                    a.btn(href="#") Donate Now
-                .cause
-                    img(src="https://picsum.photos/300/200" alt="Cause 2")
-                    h3 Starving
-                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
-                    a.btn(href="#") Donate Now
-                .cause
-                    img(src="https://picsum.photos/300/200" alt="Cause 3")
-                    h3 Homeless
-                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
-                    a.btn(href="#") Donate Now
+            .container1
+                b.heading-3 30M
+                .number-of-supporters Number of supporters
+                img.icon1png(alt="", src="icon1.png.png")
+            .container2
+                b.heading-31 $100M
+                .fund-raised Fund raised
+                img.icon2png(alt="", src="icon2.png.png")
+            .container3
+                b.heading-32 20M
+                .children-helped Children Helped
+                img.icon3png(alt="", src="icon3.png.png")
+            .container4
+                b.heading-33 18,000
+                .volunteers-worldwide Volunteers Worldwide
+                img.icon4png(alt="", src="icon4.png.png")
+        
+        .container5
+            .container6
+                .container7
+                    .heading-34 News & Updates
+                    .verticalborder
+            .container8
+                .button2
+                    b.button1 LEARN MORE
+        
+        .background
+            img.jordane-mathieu-nnjtkp37uoe-un-icon(alt="", src="jordane-mathieu-nnJtKp37UOE-unsplash-scaled-700x990.jpg.png")
+            .gradient
+            .heading-3-link
+                b.partnering-to-create-container
+                    span.partnering-to-create-container1
+                        p.partnering-to-create Partnering to create
+                        p.partnering-to-create a community
+        
+        .background1
+            img.jordane-mathieu-nnjtkp37uoe-un-icon(alt="", src="shutterstock_290072948-700x990.jpg.png")
+            .gradient
+            .heading-3-link1
+                b.turning-your-emergency-container
+                    span.partnering-to-create-container1
+                        p.partnering-to-create Turning your
+                        p.partnering-to-create emergency donation
+                        p.partnering-to-create into instant aid
+        
+        .background2
+            img.jordane-mathieu-nnjtkp37uoe-un-icon(alt="", src="ben-white-PAiVzSmYy-c-unsplash-700x990.jpg.png")
+            .gradient
+            .heading-3-link2
+                b.our-10-favourite-container
+                    span.partnering-to-create-container1
+                        p.partnering-to-create Our 10 Favourite
+                        p.partnering-to-create ClimateStrike protest
+                        p.partnering-to-create signs
+        
+        .background3
+            img.jordane-mathieu-nnjtkp37uoe-un-icon(alt="", src="kat-yukawa-K0E6E0a0R3A-unsplash-700x990.jpg.png")
+            .gradient
+            .heading-3-link3
+                b.of-us-went-container
+                    span.partnering-to-create-container1
+                        p.partnering-to-create 350,000 of us went on
+                        p.partnering-to-create ClimateStrike – now
+                        p.partnering-to-create what?
+        
+        .background4
+            img.jordane-mathieu-nnjtkp37uoe-un-icon(alt="", src="katie-moum-LSrChr55Ggc-unsplash-scaled-700x990.jpg.png")
+            .gradient
+            .heading-3-link4
+                b.best-less-container
+                    span.partnering-to-create-container1
+                        p.partnering-to-create Best & Less published
+                        p.partnering-to-create their supplier lists
+        
+        .background5
+            img.jordane-mathieu-nnjtkp37uoe-un-icon(alt="", src="elvis-bekmanis-Jc1BXsF1dcc-unsplash-scaled-700x990.jpg.png")
+            .gradient
+            .heading-3-link5
+                b.david-jones-and-container
+                    span.partnering-to-create-container1
+                        p.partnering-to-create David Jones and
+                        p.partnering-to-create Country Road
+                        p.partnering-to-create support worker
+                        p.partnering-to-create safety
+        
+        .lorem-ipsum-dolor6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
+        .lorem-ipsum-dolor7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et augue sagittis, efficitur mi et
+        
+        img.image-icon7(alt="", src="image.png")
+        b.lorem-ipsum Lorem Ipsum
+        i.time TIME
+        i.place PLACE
+        
+        img.image-icon8(alt="", src="image.png")
+        .upcoming-event Upcoming Event
+        b.b 3
+        b.b1 12
+        b.b2 2
+        
+        .line-div
+        
+        .home-page-child1
+        .home-page-child2
+            b.lorem-ipsum1 Lorem Ipsum
+            i.time1 TIME
+            i.place1 PLACE
+            b.lorem-ipsum2 Lorem Ipsum
+            i.time2 TIME
+            i.place2 PLACE
+        
+            b.month MONTH
+            b.month1 MONTH
+            b.month2 MONTH
+        
+        .button4
+            b.button1 MORE EVENT
+        
+        b.our-staff Our Staff
+        b.gallery Gallery
+        
+        .image-parent
+            img.image-icon9(alt="", src="image.png")
+            img.image-icon10(alt="", src="image.png")
+            img.image-icon11(alt="", src="image.png")
+            img.image-icon12(alt="", src="image.png")
+            img.image-icon13(alt="", src="image.png")
+            img.image-icon14(alt="", src="image.png")
+            img.image-icon15(alt="", src="image.png")
+            img.image-icon16(alt="", src="image.png")
+        
+        .volunteer
+            img.volunteer-child(alt="", src="Rectangle 7.svg")
+            img.image-1-icon(alt="", src="image 1.png")
+            .volunteer-item
+                i.drs-name-name DRS. NAME NAME
+                .company-owner COMPANY OWNER
+        
+        .volunteer1
+            img.volunteer-child(alt="", src="Rectangle 7.svg")
+            img.image-1-icon(alt="", src="image 1.png")
+            .volunteer-item
+                i.drs-name-name DRS. NAME NAME
+                .company-owner COMPANY OWNER
+        
+        .volunteer2
+            img.volunteer-child(alt="", src="Rectangle 7.svg")
+            img.image-1-icon(alt="", src="image 1.png")
+            .volunteer-item
+                i.drs-name-name DRS. NAME NAME
+                .company-owner COMPANY OWNER
+        
+        .volunteer3
+            img.volunteer-child(alt="", src="Rectangle 7.svg")
+            img.image-1-icon(alt="", src="image 1.png")
+            .volunteer-item
+                i.drs-name-name DRS. NAME NAME
+                .company-owner COMPANY OWNER
+        
+        .image-child
+            img.image-2-icon(alt="", src="Rectangle 19.svg")
+            img.image-3-icon(alt="", src="Rectangle 20.svg")
+        
+        .home-page-child3
+            img.image-4-icon(alt="", src="Rectangle 19.svg")
+            img.image-5-icon(alt="", src="Rectangle 20.svg")
+        
+        .back-to-home
+            .back-to-home1
+                i.back-to-home-text Back to Home
