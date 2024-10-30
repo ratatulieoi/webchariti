@@ -862,3 +862,74 @@
     font-family: Poppins;
 }
 
+body {
+    background-color: #192524;
+}
+
+.image-iconback {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.2;
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.judul{
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 775px;
+    font-family:  Poppins;
+    color: white;
+}
+.cause {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Atur lebar sesuai kebutuhan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.causecard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.kartunama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    color: beige;
+}
+
+img.image-icon, img.line-icon {
+    width: 50px;
+    height: auto;
+    margin: 5px;
+}
+
+button, .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #ff4f4f;
+}
