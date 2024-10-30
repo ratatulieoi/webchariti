@@ -50,6 +50,7 @@ nav ul li ul {
   background: #37bc9b;
   flex-direction: column;
   min-width: 100px;
+  z-index: 10;
 }
 
 nav ul li ul li {
