@@ -1,0 +1,345 @@
+body {
+    background-color: #192524;
+}
+
+.image-iconback {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.2;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.b3 {
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 855px;
+    font-family:  Poppins;
+    color: white;
+}
+
+.contact1 {
+    position: absolute;
+    top: 229px;
+    left: 587px;
+    font-size: 64px;
+    display: inline-block;
+    font-family: Poppins;
+    width: 267px;
+    height: 76px;
+}
+.contact-child {
+    position: absolute;
+    top: 500px;
+    left: -2px;
+    background-color: #090808;
+    width: 100%;
+    height: 360px;
+}
+.b {
+    position: absolute;
+    top: 770px;
+    left: 350px;
+    display: inline-block;
+    width: 130px;
+    height: 20px;
+    color: #fff;
+    font-size: 15px;
+}
+.b1 {
+    position: absolute;
+    top: 770px;
+    left: 805px;
+    display: inline-block;
+    width: 130px;
+    height: 17px;
+    color: #fff;
+    font-size: 15px;
+}
+.b2 {
+    position: absolute;
+    top: 770px;
+    left: 1250px;
+    display: inline-block;
+    width: 130px;
+    height: 17px;
+    color: #fff;
+    font-size: 15px;
+}
+.a-wonderful-serenity {
+    position: absolute;
+    top: 693px;
+    left: 350px;
+    display: inline-block;
+    width: 275px;
+    height: 34px;
+    color: #fff;
+}
+.a-wonderful-serenity1 {
+    position: absolute;
+    top: 696px;
+    left: 805px;
+    display: inline-block;
+    width: 275px;
+    height: 34px;
+    color: #fff;
+}
+.a-wonderful-serenity2 {
+    position: absolute;
+    top: 693px;
+    left: 1250px;
+    display: inline-block;
+    width: 275px;
+    height: 34px;
+    color: #fff;
+}
+.phone {
+    position: absolute;
+    top: 640px;
+    left: 350px;
+    font-size: 24px;
+    color: #fff;
+}
+.email {
+    position: absolute;
+    top: 638px;
+    left: 805px;
+    font-size: 24px;
+    color: #fff;
+}
+.location {
+    position: absolute;
+    top: 638px;
+    left: 1250px;
+    font-size: 24px;
+    color: #fff;
+}
+.phone-icon {
+    position: absolute;
+    top: 569px;
+    left: 350px;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+}
+.mail-icon {
+    position: absolute;
+    top: 567px;
+    left: 805px;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+}
+.contact-item {
+    position: absolute;
+    top: 576px;
+    left: 918px;
+    width: 59px;
+    height: 38px;
+}
+.contact-inner {
+    position: absolute;
+    top: 570.47px;
+    left: 1250px;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+.rectangle-div {
+    position: absolute;
+    top: 978px;
+    left: 270px;
+    width: 993px;
+    height: 720px;
+}
+.frame-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #f8f8f8;
+    width: 800px;
+    height: 63px;
+}
+.frame-div {
+    position: absolute;
+    top: 1092px;
+    left: 555px;
+    width: 799px;
+    height: 63px;
+}
+.frame-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(248, 248, 248, 0.97);
+    width: 800px;
+    height: 63px;
+}
+.email1 {
+    position: absolute;
+    top: 0px;
+    left: 42px;
+    display: flex;
+    align-items: center;
+    width: 97px;
+    height: 63px;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 1183px;
+    left: 555px;
+    width: 799px;
+    height: 63px;
+    font-size: 18px;
+    color: #a69999;
+}
+.email2 {
+    position: absolute;
+    top: 0px;
+    left: 43px;
+    display: flex;
+    align-items: center;
+    width: 97px;
+    height: 63px;
+}
+.rectangle-group {
+    position: absolute;
+    top: 1269px;
+    left: 555px;
+    width: 799px;
+    height: 62px;
+    font-size: 18px;
+    color: #a69999;
+}
+.frame-child1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(248, 248, 248, 0.97);
+    width: 800px;
+    height: 199px;
+}
+.message {
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    display: flex;
+    align-items: center;
+    width: 97px;
+    height: 63px;
+}
+.rectangle-container {
+    position: absolute;
+    top: 1354px;
+    left: 555px;
+    width: 799px;
+    height: 197px;
+    font-size: 18px;
+    color: #a69999;
+}
+.full-name {
+    position: absolute;
+    top: 1092px;
+    left: 595px;
+    font-size: 18px;
+    display: flex;
+    color: #a69999;
+    align-items: center;
+    width: 98px;
+    height: 63px;
+}
+.button1 {
+    position: relative;
+}
+.button {
+    position: absolute;
+    top: 1590px;
+    left: 555px;
+    background-color: #f27676;
+    width: 799px;
+    height: 51px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 28px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #000;
+    font-family: Poppins;
+}
+.leave-us-your {
+    position: absolute;
+    top: 934px;
+    left: 805px;
+    font-size: 36px;
+    font-weight: 800;
+}
+.and-we-will {
+    position: absolute;
+    top: 1008px;
+    left: 850px;
+    font-size: 18px;
+}
+.map {
+    position: absolute;
+    top: 1734px;
+    left: -1px;
+    width: 100%;
+    height: 657px;
+    overflow: hidden;
+}
+.image-2-icon {
+    position: absolute;
+    top: 1806px;
+    left: -1px;
+    width: 100%;
+    height: 514px;
+    object-fit: cover;
+}
+.mail-icon1 {
+    position: absolute;
+    top: 2439px;
+    left: 765px;
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+}
+.facebook-icon {
+    position: absolute;
+    top: 2434px;
+    left: 890px;
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+}
+.twitter-icon {
+    position: absolute;
+    top: 2439px;
+    left: 1020px;
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+}
+.instagram-icon {
+    position: absolute;
+    top: 2439px;
+    left: 1150px;
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+}
+.contact {
+    width: 100%;
+    position: relative;
+    background-color: #192524;
+    height: 2300px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    font-family: Inter;
+}
+
