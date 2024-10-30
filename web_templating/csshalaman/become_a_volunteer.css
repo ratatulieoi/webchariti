@@ -161,6 +161,14 @@ body {
     height: 665px;
     object-fit: cover;
 }
+.b3 {
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    font-family:  Poppins;
+    color: white;
+}
 .how-it-works {
     position: absolute;
     top: 1200px;

@@ -92,10 +92,11 @@ body {
 }
 .program-item {
     position: absolute;
-    top: 1859px;
-    left: 2000px;
-    width: 1440px;
+    top: 2020px;
+    left: 0px;
+    width: 2000px;
     height: 1579px;
+    background-color: #D1EBDB;
 }
 .the-right-program {
     position: absolute;
@@ -449,5 +450,13 @@ body {
     font-size: 36px;
     color: #000;
     font-family: Poppins;
+}
+.b3 {
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 775px;
+    font-family:  Poppins;
+    color: white;
 }
     

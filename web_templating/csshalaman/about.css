@@ -145,7 +145,14 @@ body {
     object-fit: cover;
     opacity: 0.2;
 }
-
+.b3 {
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 900px;
+    font-family:  Poppins;
+    color: white;
+}
 .overlay-title {
     position: absolute;
     top: 35%;
