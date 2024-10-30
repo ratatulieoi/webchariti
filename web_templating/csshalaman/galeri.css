@@ -1,15 +1,28 @@
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
     background-color: #192524;
-    color: #fff;
-    text-align: center;
 }
 
+.image-iconback {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.2;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.b3 {
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 900px;
+    font-family:  Poppins;
+    color: white;
+}
 .gallery {
     width: 100%;
     position: relative;
-    height: 3844px; /* Sesuaikan sesuai kebutuhan */
+    height: 3500px; /* Sesuaikan sesuai kebutuhan */
     overflow: hidden;
 }
 
@@ -106,6 +119,8 @@ body {
 }
 
 .image-icon8 {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.2;
     position: absolute;
     top: 2455px; /* Sesuaikan sesuai kebutuhan */
     left: 50%; /* Memusatkan secara horizontal */
@@ -124,6 +139,8 @@ body {
 }
 
 .image-icon9 {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.2;
     position: absolute;
     top: 1552px; /* Sesuaikan sesuai kebutuhan */
     left: 50%; /* Memusatkan secara horizontal */
