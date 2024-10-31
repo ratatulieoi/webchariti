@@ -8,15 +8,23 @@ html(lang="en")
         link(rel="stylesheet", href="web_templating/component/css/menu.css")
         link(rel="stylesheet", href="web_templating/component/css/nav.css")
         link(rel="stylesheet", href="web_templating/component/css/footer.css")
+        link(rel="stylesheet", href="web_templating/csshalaman/template.css")
 
         block head
         title Home is Life 
     body        
         block menu
             +menu
+            .header
+                img(src="web_templating/image/image1.png", alt="")
+                    .judul 
+                    h1 PUKIMAK
 
         block main
-            // Konten utama halaman akan diisi di sini
+            .body
+                p aewiuhfiuwaehfuiawhfuieiugeauighaeuigh rgaeruifhaiuhfuiahfiuaeh fbwauiehfauihf
+                img(src="", alt="")
+            
 
         block footer
             +footer

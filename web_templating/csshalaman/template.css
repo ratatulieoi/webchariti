@@ -1,0 +1,21 @@
+.body{
+    margin: 0px;
+    background-color:#192524 ;
+    min-height: 900px;
+    color: rgb(255, 0, 0);
+}
+p{
+    color: aqua;
+}
+.header {
+    width: 100%;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f0f8ff; 
+    
+}
+.header img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
