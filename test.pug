@@ -1,12 +1,14 @@
 extends template.pug
 include web_templating/component/pug/_articlecard.pug
 include web_templating/component/pug/_button.pug
+include web_templating/component/pug/_shop.pug
 
 
 block head
     link(rel="stylesheet", href="web_templating/component/css/articlecard.css")
     link(rel="stylesheet", href="web_templating/component/css/button.css")
     link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet", href="web_templating/component/css/shop.css")
     title lol 
 block main
         .judul
@@ -14,3 +16,4 @@ block main
         .container 
             +article
             +button
+            +shop
