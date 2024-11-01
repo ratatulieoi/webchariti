@@ -1,0 +1,10 @@
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    
+}
