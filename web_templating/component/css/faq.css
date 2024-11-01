@@ -1,0 +1,28 @@
+.rectangle {
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    background-color: #d1ebdb;
+    height: 68px;
+}
+.container{
+    display: flex;
+}
+.inspiration-list {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 33px;
+}
+
+.inspiration-container {
+    width: 472px;
+    position: relative;
+    font-size: 25px;
+    display: inline-block;
+    font-family: Poppins;
+    color: #000;
+    text-align: left;
+}
+
+
