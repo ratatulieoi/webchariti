@@ -1,5 +1,6 @@
 include web_templating/component/pug/_menu.pug
 include web_templating/component/pug/_footer.pug
+include web_templating/component/pug/_gambaratas.pug
 doctype html
 html(lang="en")
     head
@@ -14,7 +15,7 @@ html(lang="en")
     body        
         block menu
             +menu
-            
+            +atas
         block main    
 
         block footer

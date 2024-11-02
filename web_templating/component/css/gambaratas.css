@@ -1,0 +1,27 @@
+.gambaratas{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: fill;
+}
+.gambaratas img{
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+.judulatas h1{
+    position: absolute;
+    bottom: 50% ;
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 60px;
+    color: aliceblue;
+}
+.judulatas p{
+    position: absolute;
+    bottom: 50% ;
+    left: 50%;
+    transform: translateX(-50%); 
+    color: aliceblue;
+}
