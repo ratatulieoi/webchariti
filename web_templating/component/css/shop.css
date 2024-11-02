@@ -35,4 +35,6 @@
 }
 .info h3{
   color: black;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
 }
