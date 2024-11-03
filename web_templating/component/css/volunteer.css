@@ -15,6 +15,7 @@
     background-color: #95FE9C;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    max-width: fit-content;
 }
 .volunteertxt p{
     color: rgb(12, 12, 12);
