@@ -1,0 +1,63 @@
+.team-section {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    padding-top: 5rem;
+    text-align: center;
+    justify-content: center;
+}
+.judul-team-sec{
+    display: flex;
+    padding-top: 4rem;
+    text-align: left;
+    font-size: 18px;
+    color: aliceblue;
+}
+.h1-container-team{
+    padding-left: 5rem;
+    width: 85%;
+    font-size: 25px;
+    padding-left: 18rem;
+}
+.button-team{
+    justify-content: center;
+    padding-left: 45%;
+    padding-top: 5rem;
+}
+.line-arrow-team{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.gambar-lingkaran{
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-left: 28.5rem;
+    object-fit: cover;
+    left: 2rem;
+    padding-bottom: 5rem;
+}
+.gambar-lingkaran h1{
+    justify-content: center;
+    position: relative;
+    left: -20rem;
+    padding-top: 4rem;
+    color:aliceblue;
+    font-family: Poppins;
+    font-size: 46px
+}
+.text-gambar-lingkaran{
+    display: flex;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 4rem;
+    font-family: Poppins;
+    font-size: 26px;
+}
+.button-team-bawah{
+    display: flex;
+    padding-left: 45%;
+    padding-bottom: 8rem;
+    padding-top: 2rem;
+}

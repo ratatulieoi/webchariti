@@ -1,0 +1,65 @@
+.article-section-about-us{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    background-color: #3C5759;
+}
+.about-us-text{
+    padding: 1.5rem;
+    color: aliceblue;
+}
+.image-article-about-us{
+    padding: 3.5rem;
+}
+.about-us-text p{
+    padding-top: 2.5rem;
+}
+.about-us-text h2{
+    font-size: 1.5rem;
+}
+.icon-section{
+    padding: 2rem;
+    margin: 1rem;
+}
+.text-icon{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    color: aliceblue;
+}
+.gambar-about-us-section{
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+.gambar-about-us-section img{
+    object-fit: fill;
+    width: 100%;
+    opacity: 0.2;
+}
+.judul-gambar-about-us{
+    position: relative;
+    top: -20rem;
+}
+.judul-gambar-about-us h1{
+    position: absolute;
+    bottom: 0rem;
+    left: 5rem;
+    right: 5rem;
+    font-size: 40px;
+    color: aliceblue;
+}
+.text-gambar-bawah{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 8rem;
+    left: 5rem;
+    right: 5rem;
+    color: aliceblue;
+    gap: 5rem;
+    font-size: 12px;
+}

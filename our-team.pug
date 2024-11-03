@@ -1,0 +1,36 @@
+extends template.pug 
+include web_templating/component/pug/_volunteer.pug
+include web_templating/component/pug/_button.pug
+
+block head 
+    link(rel="stylesheet", href="web_templating/component/css/volunteer.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/our-team.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet", href="web_templating/component/css/button.css")
+block main 
+    .container
+        .judul-team-sec
+            .h1-container-team
+                h1 Our Team
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo.
+        .team-section
+                +volunteer
+                +volunteer
+                +volunteer
+                +volunteer
+        .team-section
+                +volunteer
+                +volunteer
+                +volunteer
+                +volunteer
+        .button-team
+                +button
+        .line-arrow-team
+            img(src="web_templating/image/Line 9.svg", alt="")
+        .gambar-lingkaran
+            img(src="web_templating/image/Ellipse 19.svg", alt="")
+            h1.text-lingkaran Want to get Involved
+        .text-gambar-lingkaran
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo. Nam sit amet lorem non nisl aliquet ornare. Nunc eget volutpat magna. Nam commodo dui eget eros placerat porta. Aenean rutrum ligula ac neque tempor, facilisis aliquam quam sagittis.
+        .button-team-bawah 
+                +button
