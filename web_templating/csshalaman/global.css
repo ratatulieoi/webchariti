@@ -1,6 +1,8 @@
-.container{
-    max-width: 1170px;
-    margin: auto;
+.container {
+    max-width: 1920px; /* Lebar maksimum yang diinginkan */
+    width: 100%;       /* Pastikan container menyesuaikan dengan lebar layar yang lebih kecil */
+    margin: 0 auto;    /* Mengatur agar container berada di tengah */  /* Memberikan padding agar konten tidak menempel di sisi layar pada perangkat kecil */
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar total */
 }
 
 body{

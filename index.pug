@@ -1,0 +1,55 @@
+extends template.pug
+include web_templating/component/pug/_articlecard.pug
+include web_templating/component/pug/_button.pug
+include web_templating/component/pug/_shop.pug
+include web_templating/component/pug/_iconchariti.pug
+include web_templating/component/pug/_volunteer.pug
+
+block head
+    link(rel="stylesheet", href="web_templating/component/css/articlecard.css")
+    link(rel="stylesheet", href="web_templating/component/css/button.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet", href="web_templating/component/css/shop.css")
+    link(rel="stylesheet", href="web_templating/component/css/iconchariti.css")
+    link(rel="stylesheet", href="web_templating/component/css/volunteer.css")
+    link(rel="stylesheet", href="web_templating/component/css/gambaratas.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/index.css")
+
+    title Home 
+
+block main
+        .homembik
+            .homembikl kontol
+            .homembikm kontol 
+            .homembikg
+                img(src="web_templating/image/background1.png", alt="")
+        .container
+            .textourcause 
+                h1 Our Cause
+                .btncausehome
+                    +button
+            .articlehomesec
+                .articlehome
+                    img(src="web_templating/image/homearticle.png", alt="")
+                    .articlehometext 
+                        h1 We Help People
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget.
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget.
+                        .btarticlehome
+                            +button
+            .articlehome2 
+                +article
+                +article
+                +article
+            .whoarewesec
+                .kotak Who Are We?
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget.
+                img.kotak(src="web_templating/image/whatarewe.png", alt="")
+                img.kotak(src="web_templating/image/whoarewe.png", alt="")
+                .kotak What Are We?
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget.
+        .container kotak
+            +shop
+            +icon
+            +volunteer
+
