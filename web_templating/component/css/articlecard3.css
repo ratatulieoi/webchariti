@@ -1,0 +1,35 @@
+.article-section-portfolio2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.gambar-article-portfolio {
+    width: 485px;
+    height: 350px;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.teks-konten {
+    max-width: 300px;
+    font-size: 13px;
+    font-family: 'Poppins';
+    color: aliceblue;
+}
+
+.teks-konten h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.teks-konten h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
