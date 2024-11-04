@@ -1,0 +1,17 @@
+extends template.pug 
+include web_templating/component/pug/_articlecard2.pug
+include web_templating/component/pug/_articlecard3.pug
+
+block head 
+    link(rel="stylesheet", href="web_templating/component/css/articlecard2.css")
+    link(rel="stylesheet", href="web_templating/component/css/articlecard3.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/portfolio.css")
+block main 
+    .container 
+        +article-gambar
+        .article-section-portfolio2
+            +article-gambar2
+        +article-gambar
+        .article-section-portfolio2 
+            +article-gambar2
+        +article-gambar

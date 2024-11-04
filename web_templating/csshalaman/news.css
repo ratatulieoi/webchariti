@@ -1,0 +1,29 @@
+.puki{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.news-image-sec{
+    width: 50%;
+}
+.text-section-news p {
+    padding-bottom: 15rem;
+}
+.text-section-news{
+    width: 50%;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    font-family: Poppins;
+    font-size: 25px;
+}
+.img-recent-article{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+.text-onleft-img{
+    display: flex;
+    font-size: 25px;
+}
