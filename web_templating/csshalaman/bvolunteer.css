@@ -1,0 +1,200 @@
+.letshelpsec{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.letshelpinfo{
+    width: 50%;
+    color: aliceblue;
+    padding-left: 100px;
+}
+.letshelpimg{
+    object-fit: cover;
+    width: 50%;
+    position: relative;
+    margin-left: 20%;
+
+}
+.bvimg1{
+    width: 363px;
+    height: 353px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 1;
+}
+.bvimg2{
+    width: 363px;
+    height: 353px;
+    position: absolute;
+    top: 35px;
+    left: 85px;
+    z-index: 2;
+}
+.morepeoplesec{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.morepeopleimg{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+.morepeopleimg img{
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+}
+.morepeopleinfo{
+    width: 60%;
+    height: 100%;
+    padding: 50px;
+    padding-right: 200px;
+    color: aliceblue;
+}
+.garousec{
+    background-image: url(../image/garou_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #192524;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.garousecinfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    width: 80%;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: aliceblue;
+}
+
+.garousecinfo h1{
+    color: aliceblue;
+    padding-top: 2rem;
+}
+.infoteks h2{
+    font-size: 5rem;
+    color: #ff6868;
+}
+.infoteks p{
+    font-size: 0.9rem;
+    color: aliceblue;
+}
+.infoteks1 {
+    padding-top: 5rem;
+
+}
+.infoteks1 h2{
+    font-size: 5.1rem;
+    color: #ff6868;
+}
+.infoteks1 p{
+    font-size: 0.9rem;
+    color: aliceblue;
+}
+.benefitsec{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+}
+.benefitteks{
+    width: 50%;
+    height: 100%;
+    color: #ff6868;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-right: 1rem;
+}
+.benefitteks li{
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+.benefitteks p{
+    font-size: 2rem;
+}
+.benefitimg{
+    width: 45%;
+    height: 70%;
+    object-fit: cover;
+    position: relative;
+    background-color: bisque;
+    margin-top:10rem;
+    padding-right: 100px;
+}
+.benefitlist{
+    margin-top: 3rem;
+}
+.bfit1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+.bfit2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    z-index: 2;
+}
+.cardvolsec{
+    margin-bottom: 7rem;
+}
+.card {
+    background-color: #D1EBDB;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-info {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }

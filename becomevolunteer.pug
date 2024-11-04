@@ -1,0 +1,100 @@
+extends template.pug 
+include web_templating/component/pug/_button.pug
+
+
+block head 
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/bvolunteer.css")
+    link(rel="stylesheet", href="web_templating/component/css/button.css")
+block main 
+    .container
+        .letshelpsec 
+            .letshelpinfo   
+                h1 Let's Help Together 
+                p Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same. Most organizations that are charities are required to registered with the appropriate regulato
+                +button 
+            .letshelpimg 
+                img.bvimg1(src="web_templating/image/Aboutcharity.png", alt="")
+                img.bvimg2(src="web_templating/image/volunteer2.png", alt="")
+        .morepeoplesec 
+            .morepeopleimg 
+                img.mpimg1(src="web_templating/image/volunteer1.png", alt="")
+            .morepeopleinfo 
+                h1 More People 
+                h1 More Impact
+                p Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same. Most organizations that are charities are required to registered with the appropriate regulato  principles are the same. Most organizations that are charities are required to registered with the appropriate regulato
+        .garousec 
+            .garousecinfo 
+                .infoteks
+                    h1 How it works
+                    h2 01
+                    p Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same. Most organizations that are charities are required to registered with the appropriate regulato  principles are the same. Most organizations that are charities are required to registered with the appropriate regulato
+                .infoteks1
+                    h2 02
+                    p Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same. Most organizations that are charities are required to registered with the appropriate regulato  principles are the same. Most organizations that are charities are required to registered with the appropriate regulato
+                .infoteks
+                    h2 03
+                    p Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same. Most organizations that are charities are required to registered with the appropriate regulato  principles are the same. Most organizations that are charities are required to registered with the appropriate regulato
+                .infoteks
+                    h2 04
+                    p Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same. Most organizations that are charities are required to registered with the appropriate regulato  principles are the same. Most organizations that are charities are required to registered with the appropriate regulato
+        .benefitsec 
+            .benefitteks
+                h1 Benefits of Volunteering
+                .benefitlist
+                    li Recruit volunteers from our corporate partners 
+                    li Match volunteers to the specific skills you need
+                    li Request donations button for 501c3 organizations
+                    li Manage your photos and videos
+                    li Send group alerts 
+                    li Track and report opportunity metrics
+                    li Export your opportunity data
+                    li Draw you happy tree 
+                    li Make breakfast for you           
+            .benefitimg
+                img.bfit1(src="web_templating/image/volunteerbenefit.jpg", alt="")
+                img.bfit2(src="web_templating/image/volunteerbenefit.jpg", alt="")
+        .cardvolsec
+            .card
+                .card-body
+                    h3 Interest to Get Involved?
+                    .card-info
+                    p Box 8233
+                    p 1810 Kings Way
+                    p King Street, 5th Avenue, New York
+                    p 
+                        span.phone-icon 
+                        span New York: 1800-2355-2356
+                    p 
+                        span.clock-icon ⏰
+                        span Mon-Fri 8:00am - 6:00pm
+                    p 
+                        span.email-icon ✉️
+                        a(href="mailto:uhuyuhuy@Chariti.theme") uhuyuhuy@Chariti
+                    form.contact-form
+                    .form-group
+                        label(for="firstName") First Name*
+                        input#firstName(type="text")
+                        label(for="lastName") Last Name*
+                        input#lastName(type="text")
+                    .form-group
+                        label(for="email") Email
+                        input#email(type="email")
+                        label(for="phone") Phone*
+                        input#phone(type="tel")
+                    .form-group
+                        label(for="subject") Subject
+                        input#subject(type="text")
+                    .form-group
+                        label(for="message") Message*
+                        textarea#message
+                    button.btn-contact(type="submit") Send Message
+                    p * Required fields
+                .card
+                .card-body
+                    h3 Interest to Get Involved?
+                    .card-info
+                    p Box 8233
+                    p 1810 Kings Way
+                    p King Street, 5th Avenue, New York
+            

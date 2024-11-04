@@ -1,28 +1,35 @@
 .gambaratas{
+    display: flex;
     position: relative;
     width: 100%;
     height: 468px;
     overflow: hidden;
     object-fit: contain;
+    background-image: url(../../image/image1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #192524;
+    background-blend-mode: overlay;
+    align-items: center;
 }
-.gambaratas img{
-    position: absolute;
+.judulatas{
     width: 100%;
-    height: 100%;
-    opacity: 0.4;
+    height: 30px;
+    text-align: center;
 }
 .judulatas h1{
     position: absolute;
-    bottom: 50% ;
+    bottom: 40%;
     left: 50%;
-    transform: translateX(-50%); 
-    font-size: 60px;
-    color: aliceblue;
+    transform: translateX(-50%);
+    font-size: 80px;
+    color: aliceblue
 }
 .judulatas p{
     position: absolute;
-    bottom: 50% ;
+    bottom: 35%;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
     color: aliceblue;
 }
