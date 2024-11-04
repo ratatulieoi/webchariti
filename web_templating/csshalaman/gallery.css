@@ -1,0 +1,74 @@
+.gallery1sec{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr);  
+    width: 100%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.judulgallery h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 3rem;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.boxgallery1{
+    position: relative;
+    overflow: hidden;
+    background-color: aqua;
+}
+.boxgallery1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galleryteks{
+    padding: 20px;
+}
+.galleryteks h1{
+    color: aliceblue;
+    font-size: 4rem;
+}
+.gallery2sec{
+    display: grid;
+    background-color: #192524;
+    background-blend-mode: overlay;
+    background-image: url(../image/galeribackground2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.gambartengah{
+    height: 330px;
+}
+.pagination {
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .pagination a {
+    color: rgb(255, 255, 255);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+.gallery3sec{
+    display: grid;
+    background-color: #192524;
+    background-blend-mode: overlay;
+    background-image: url(../image/galeribackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    
+}
