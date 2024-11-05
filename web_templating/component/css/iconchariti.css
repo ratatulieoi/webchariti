@@ -4,8 +4,8 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .icon{
     display: flex;

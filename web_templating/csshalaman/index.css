@@ -12,16 +12,22 @@
     background-color: #3C5759;
     height: 100%;
     color: aliceblue;
-    padding : 40px;
+    padding : 20px;
     text-shadow: #000000 1px 0 10px;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
 }
 .homembikm{
     width: 50%;
     background-color: #D1EBDB;
     height: 100%;
     color: aliceblue;
-    padding : 40px;
+    padding : 20px;
     text-shadow: #000000 1px 0 10px;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
 }
 .homembikg{
     width: auto;
@@ -32,7 +38,13 @@
 }
 .buttonembik{
     position: relative;
-    bottom: -89px;
+    padding-top: 10%;
+}
+.buttonembik a{
+    font-style: oblique;
+    font-size: 1.5rem;
+    color: rgb(78, 125, 255);
+    text-shadow: none;
 }
 .textpage{
     display: grid;
