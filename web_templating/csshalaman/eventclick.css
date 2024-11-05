@@ -1,0 +1,38 @@
+.howto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.howto h1{
+    font-size: 2.5rem;
+    color: #ff6868;
+    margin-bottom: 1rem;
+}
+.howto p{
+    font-size: 1.2rem;
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+.howtoimg{
+    width: 80%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.usefulimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap : 2rem;
+}
+.useful1{
+    width: 40%;
+    object-fit: cover;
+    border-radius: 1rem;
+}

@@ -1,5 +1,5 @@
 mixin eventCard(date, month, title, time, location)
-  .event-card
+  .event-card(onclick=`window.location.href = '${link}'`)
     .event-card__image
       img(src="web_templating/image/event1.png" alt="Event Image")
     .event-card__details

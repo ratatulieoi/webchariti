@@ -1,0 +1,23 @@
+extends template.pug 
+include web_templating/component/pug/_event_image.pug
+
+block head 
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet", href="web_templating/component/css/event_image.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/event.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/eventclick.css")
+
+block main 
+    .container 
+        .eventcardsec
+            +eventCard('30', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Marengan')
+            +eventCard('23', 'Apr', 'Benjir Polehh', '7:00 am - 7:00 am', 'Sampang')
+            +eventCard('5', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Pamolokan')
+            +eventCard('90', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'London')
+            +eventCard('6', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Bogor')
+            +eventCard('65', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Sumenep')
+            +eventCard('4', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Batuan')
+            +eventCard('25', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Madiun')
+            +eventCard('2', 'Apr', 'Warung Bekicot', '7:00 am - 7:00 am', 'Magetan')
+            +eventCard('2', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Saronggi')
+            +eventCard('2', 'Apr', 'JKT48 Uhuy', '7:00 am - 7:00 am', 'Jakarta')
