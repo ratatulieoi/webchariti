@@ -1,9 +1,10 @@
 extends template.pug 
 include web_templating/component/pug/_news-image.pug
-
+include web_templating/component/pug/_article-image.pug
 block head 
   link(rel="stylesheet", href="web_templating/csshalaman/news.css")
   link(rel="stylesheet", href="web_templating/component/css/news-image.css")
+  link(rel="stylesheet", href="web_templating/component/css/article-image-news.css")
 block main 
   .container 
     .puki 
@@ -17,6 +18,6 @@ block main
         h2 Sub-title
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou
         h1 Recent Article
-        .img-recent-article-container
-          img.img-recent-article(src="web_templating/image/event4.png", alt="") 
-          p.text-onleft-img Turning your emergency donation into instant aid
+        +article-image
+        +article-image
+        +article-image

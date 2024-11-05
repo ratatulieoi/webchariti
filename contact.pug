@@ -1,0 +1,45 @@
+extends template.pug
+include web_templating/component/pug/_button.pug
+block head 
+    link(rel="stylesheet", href="web_templating/csshalaman/contact.css")
+    link(rel="stylesheet", href="web_templating/component/css/button.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+block main 
+    .container 
+        .contact-sec-icon
+            i.fa-solid.fa-phone.icon
+                img(src="web_templating/image/Phone.svg", alt="")
+                h1 Phone
+                p A wonderful serenity has taken possession of my entire soul, like these.
+                p +62 236-570-282
+            i.fa-solid.fa-mail.icon  
+                img(src="web_templating/image/Mail.svg", alt="")
+                h1 Email
+                p A wonderful serenity has taken possession of my entire soul, like these.
+                p +62 236-570-282
+            i.fa-solid.fa-location.icon  
+                img(src="web_templating/image/Arrow 1.svg", alt="")
+                h1 Location
+                p A wonderful serenity has taken possession of my entire soul, like these.
+                p +62 236-570-282
+        .text-center-section
+                h1 Leave us your info
+                p and we will get back to you
+        .border-section-contact
+            .fullname-border
+                p Fullname*
+            .name-border
+                p Name*
+            .email-border
+                p Email*
+            .message-border
+                p Message*
+            .button-contact
+                b SUBMIT NOW
+        .img-contact-down
+            img(src="web_templating/image/map-contact.png", alt="")
+        .media-icon-down 
+            img(src="web_templating/image/Mail.svg", alt="")
+            img(src="web_templating/image/Facebook.svg", alt="")
+            img(src="web_templating/image/Twitter.svg", alt="")
+            img(src="web_templating/image/Instagram.svg", alt="")
