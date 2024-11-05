@@ -11,6 +11,15 @@
     color: aliceblue;
     padding-left: 100px;
 }
+.letshelpinfo p{
+    margin-bottom: 2rem;
+}
+.bvbtnatas{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
 .letshelpimg{
     object-fit: cover;
     width: 50%;
