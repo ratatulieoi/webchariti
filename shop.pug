@@ -1,0 +1,23 @@
+extends template.pug 
+include web_templating/component/pug/_shop.pug
+include web_templating/component/pug/_button.pug
+
+block head 
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/shoppage.css")
+    link(rel="stylesheet", href="web_templating/component/css/button.css")
+    link(rel="stylesheet", href="web_templating/component/css/shop.css")
+
+block main
+    .container 
+        .ourshop    
+            h1 Our shop
+        .shopcardsec 
+            +shop
+            +shop
+            +shop
+            +shop
+            +shop
+            +shop
+            +shop
+            +shop

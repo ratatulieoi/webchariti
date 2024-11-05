@@ -1,0 +1,17 @@
+.ourshop{
+    width: 100%;
+    text-align: justify;
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin: 5rem;
+    text-decoration: wavy red 5px;
+}
+.shopcardsec{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: center;
+    padding-bottom: 5rem;
+    margin: 100px;
+}
