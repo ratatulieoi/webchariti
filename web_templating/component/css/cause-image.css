@@ -2,7 +2,7 @@
     display: flex;
     background-color: #d1ebdb;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 755px;
+    width: 65rem;
     height: 265px;
     }
     
@@ -19,6 +19,8 @@
     
     .card-content-cause {
       padding-left: 2rem;
+      padding-top: 1rem;
+      padding-right: 2rem;
     }
     
     .progress-bar-cause {
