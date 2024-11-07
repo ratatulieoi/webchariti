@@ -1,4 +1,7 @@
-mixin faq-list
-    .question-box-faq
-      p.question-text 1. What Inspire You Helping People?
-      
+mixin faq-list(question, answer)
+  div.question-box-faq
+    input(type="checkbox" id=question.replace(/\s+/g, '-').toLowerCase() style="display:none;")
+    label(for=question.replace(/\s+/g, '-').toLowerCase())
+      p.question-text= question
+    div.answer
+      p= answer
