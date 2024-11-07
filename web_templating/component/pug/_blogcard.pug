@@ -1,0 +1,10 @@
+mixin blogcard(title, description, image)
+  .blogcard
+    .gambarblog
+      img(src=image alt="Gambar blog")
+    .blogteks
+      h1= title
+      p= description
+    .buttonblog
+      +button("Read More")
+

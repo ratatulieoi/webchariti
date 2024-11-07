@@ -1,0 +1,20 @@
+.BLOGSEC{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+.pukmki{
+    width: 60%;
+    padding-left: 5rem;
+}
+.halobagn{
+    width: 30%;
+}
+.judulblog, .paragrafblog, .recent{
+    color: #949292;
+}
+.paragrafblog{
+    margin-bottom: 3rem;
+}
