@@ -5,21 +5,26 @@ block head
     link(rel="stylesheet", href="web_templating/component/css/our-faq-list.css")
     link(rel="stylesheet", href="web_templating/csshalaman/global.css")
     link(rel="stylesheet", href="web_templating/csshalaman/our-faq.css")
+
     title FAQ
 block menu 
     +menu
     +atas('Our FAQ')
 block main 
     .container
-        .sec-faq-list 
-            +faq-list
-            +faq-list
-            +faq-list
-            +faq-list
-            +faq-list
-            +faq-list
-            +faq-list
-            +faq-list
-            +faq-list
-            +faq-list
-            +faq-list
+        .sec-faq-list
+            - var faqList = [
+            -   { question: 'What Inspires You to Help People?', answer: 'Helping people inspires me to contribute positively to the community.' },
+            -   { question: 'What is your approach to problem-solving?', answer: 'I like to break problems down into smaller, manageable tasks.' },
+            -   { question: 'How do you stay motivated?', answer: 'I keep my goals clear and celebrate small achievements.' },
+            -   { question: 'What is your biggest challenge?', answer: 'Sometimes, managing multiple tasks at once can be overwhelming.' },
+            -   { question: 'How do you prioritize tasks?', answer: 'I focus on the most important ones first and break them down into smaller steps.' },
+            -   { question: 'How do you learn new things?', answer: 'I use a mix of books, tutorials, and hands-on practice to learn.' },
+            -   { question: 'What do you enjoy outside of work?', answer: 'I love hiking and exploring nature.' },
+            -   { question: 'What is your favorite part of your job?', answer: 'The problem-solving and creative aspects are the most rewarding.' },
+            -   { question: 'How do you handle stress?', answer: 'I practice deep breathing and take breaks to refresh my mind.' },
+            -   { question: 'What are your career goals?', answer: 'I aim to continually learn and grow in my profession.' },
+            -   { question: 'What inspires you to help others?', answer: 'I believe that helping others makes a meaningful impact.' }
+            - ]
+            each faq in faqList
+                +faq-list(faq.question, faq.answer)
