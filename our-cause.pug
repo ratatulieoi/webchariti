@@ -1,0 +1,32 @@
+extends template.pug
+include web_templating/component/pug/_button.pug
+include web_templating/component/pug/cause-image.pug
+
+block head
+    link(rel="stylesheet", href="web_templating/component/css/cause-image.css")
+    link(rel="stylesheet", href="web_templating/component/css/button.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/our-cause.css")
+    title Cause
+block menu 
+    +menu
+    +atas('Our Cause')
+block main
+    .container
+        .sec-cause
+            .sec-cause-article
+                +cause-image
+                +cause-image
+                +cause-image
+                +cause-image
+                +cause-image
+                +cause-image
+            .kaneki-sec
+                h1 Want to Donate by Phone
+                p Not a Problem, Call Us Now
+                h1 +62 087848934 (Indonesia)
+                p Or email Us :
+                h1 uhuyuhuy@gmail.com
+                .uhuy-border
+                    h1 uhuyuhuyuhuyuhuy 
+                    p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna,  tempo

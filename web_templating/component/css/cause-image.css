@@ -1,0 +1,36 @@
+.card-section-cause {
+    display: flex;
+    background-color: #d1ebdb;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 755px;
+    height: 265px;
+    }
+    
+    .card-image-cause {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
+    .card-image-cause img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .card-content-cause {
+      padding-left: 2rem;
+    }
+    
+    .progress-bar-cause {
+      height: 20px;
+      background-color: #eee;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .progress-cause {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      line-height: 20px;
+    }
