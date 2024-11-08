@@ -1,0 +1,18 @@
+extends template.pug
+include web_templating/component/pug/_text-portfolio-details.pug
+block head 
+    link(rel="stylesheet", href="web_templating/csshalaman/porftolio-detail.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    title Portfolio Details
+block menu 
+    +menu
+    +atas('Porftolio Details')
+block main 
+    .container
+        .sec-portfolio-detail 
+            .sec-image-atas
+                img(src="web_templating/image/portfolio1.png", alt="")
+            +text-portfolio-details(portfoliodetails)
+            .garislurus
+            +text-portfolio-details(portfoliodetails)    
+t
