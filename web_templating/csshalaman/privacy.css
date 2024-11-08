@@ -1,0 +1,34 @@
+.kebijakansec {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+.isiprivacy{
+    padding-top: 2rem;
+    font-size: 20px;
+}
+.judulprivacy{
+    padding-top: 5rem;
+    font-size: 2.5rem;
+}
+.listprivacy{
+    padding-top: 5rem;
+}
+.listprivacy li{
+    font-size: 20px;
+}
+
+.infoprivacy{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+.infoprivacy p{
+    font-size: 20px;
+}
+#bawah{
+    padding-bottom: 6rem;
+}

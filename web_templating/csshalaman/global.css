@@ -11,3 +11,9 @@ body{
     height: auto;
     margin: 0;
 }
+.garislurus{
+    height: 2px; 
+    width: 100%; 
+    background-color: #ffffff; 
+    margin: 20px auto; 
+}
