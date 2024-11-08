@@ -1,0 +1,167 @@
+.articledonat{
+    width: 100%;
+    height: 25rem;
+    background-color: #d1ebdb;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+}
+.bawaharticledonat{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.log {
+    color: aliceblue;
+    margin-top: 2rem;
+}
+.card-section-causedo {
+    display: flex;
+    background-color: #d1ebdb;
+    width: 65rem;
+    height: 300px;
+    }
+.input1{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.teksdonat p{
+    color: aliceblue;
+    padding-top: 2rem;
+}
+.iniadadonasi{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 10rem;
+}
+.createacc h1{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: aliceblue;
+}
+.createacc h2{
+    color: aliceblue;
+    margin-bottom: 2rem;
+}
+.input2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 45rem;
+    margin-bottom: 10rem;
+}
+.teksdonatbawah{
+    height: 10rem;
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 7rem;
+    margin-bottom: 20rem;
+}
+
+.donation-box {
+    width: 27rem;
+    height: 35rem;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .donation-box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .donation-amounts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .amount {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .amount:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .other-amount {
+    margin: 15px 0;
+  }
+  
+  .other-amount input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .donation-box h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+  
+  .payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .payment-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .payment-btn:hover {
+    background-color: #555;
+  }
+  
+  .card-logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .card-logos img {
+    width: 400px;
+    height: auto;
+  }
+
+  .donsasinow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+  }

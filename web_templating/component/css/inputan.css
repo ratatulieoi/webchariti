@@ -1,0 +1,18 @@
+.name-box {
+    border: 1px solid #e0e0e0; 
+    padding: 10px; 
+    width: 300px; 
+    margin: 10px 0; 
+    color: aliceblue ;
+  }
+  
+  .name-box input {
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+  }
+  .name-box input::placeholder {
+    color: rgb(2, 2, 2);
+    font-family: 'Poppins', sans-serif;
+  }
