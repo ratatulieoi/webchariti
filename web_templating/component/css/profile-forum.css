@@ -1,0 +1,13 @@
+.content-profile {
+    width: 25rem;
+    height: 15rem;
+    padding-top: 2rem;
+    margin-bottom: 10rem;
+}
+.content-profile-img{
+    width:30%;
+    border-radius: 50%;
+}
+.text-content-form p{
+    padding-bottom: 10px;
+}

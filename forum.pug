@@ -1,0 +1,29 @@
+extends template.pug 
+include web_templating/component/pug/_forum-article.pug
+include web_templating/component/pug/_profile-forum.pug
+block head 
+    link(rel="stylesheet", href="web_templating/component/css/forum-mix.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/forum.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet", href="web_templating/component/css/profile-forum.css")
+    title Forum
+block menu 
+    +menu
+    +atas('Forum')
+block main 
+    .container
+        .sec-content-article
+            .text-content-up
+                .text-up
+                    h1 Club News
+                    p Here goes some rice category description, Good for seo
+                    +article-forum
+                    +article-forum
+                    +article-forum
+                    +article-forum
+            .sec-content-form
+                h2 Form our Forums
+                +profile-forum
+                +profile-forum
+                +profile-forum
+                +profile-forum
