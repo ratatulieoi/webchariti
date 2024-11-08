@@ -1,0 +1,18 @@
+.sec-porftfolio-detail{
+    display: flex;
+    width: 1240px;
+    height: 603px;
+}
+.sec-image-atas img{
+    display: flex;
+    width: 1240px;
+    height: 603px;
+    margin-top: 5rem;
+    justify-self: center;
+}
+.garislurus1{
+    height: 2px; 
+    width: 50%; 
+    background-color: #ffffff; 
+    margin: 20px auto; 
+}

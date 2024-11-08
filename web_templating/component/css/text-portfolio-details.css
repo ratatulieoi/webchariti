@@ -1,0 +1,10 @@
+.sec-text-1{
+    display: flex;
+    color: aliceblue;
+    flex-direction: column;
+    margin-top: 5rem;
+    font-size: 25px;
+    width: 65rem;
+    justify-self: center;
+    text-align: center;
+}
