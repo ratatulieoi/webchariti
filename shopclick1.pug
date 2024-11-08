@@ -1,0 +1,37 @@
+extends template.pug 
+include web_templating/component/pug/_button.pug
+block head
+    link(rel="stylesheet", href="web_templating/csshalaman/shopclick1.css")
+    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet", href="web_templating/component/css/button.css")
+    title Shop Details 
+block menu
+    +menu
+block main
+    .container 
+        .shopdetailsec 
+            .satesec
+                .sateimgsec
+                    img(src="web_templating/image/sateshop.jpg", alt="")
+                .satedes    
+                    h1 Sate UHUyy 
+                    h2 Rp 10000
+                    p Sate UHUyy adalah sate yang terbuat dari daging ayam yang diolah dengan cara dikukus. Sate UHUyy memiliki rasa yang gurih dan lezat. Sate UHUyy memiliki banyak penggemar di seluruh Indonesia. sate UHUyy memiliki banyak varian, seperti sate ayam, sate kambing, sate kuda, sate kerang, sate ikan, sate telur, sate tahu, sate telur puyuh, sate kacang, sate tahu, sate telur, sate tahu, sate telur p
+                    .quantity-controls
+                        input(type="radio" id="increment" name="quantity")
+                        label(for="increment").increment-button
+                            i.fa.fa-caret-up
+                        span.quantity 1
+                        input(type="radio" id="decrement" name="quantity")
+                        label(for="decrement").decrement-button
+                            i.fa.fa-caret-down
+                    .garislurus
+            .buttondescreviwe
+                +button('Checkout')
+            .descreviewsec 
+                h3 Description
+                h3 Reviews
+            .garislurus
+            .descnreveiw
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo. Nam sit amet lorem non nisl aliquet ornare. Nunc eget volutpat magna. Nam commodo dui eget eros placerat porta. Aenean rutrum ligula ac neque tempor, facilisis aliquam quam sagittis. Vivamus porttitor finibus lobortis. Suspendisse ac libero leo. Vivamus diam enim, commodo vulputate tellus eget, vehicula pulvinar sapien. Nullam cursus placerat nisi, ut pretium ante dictum at. Cras pulvinar pulvinar sapien porta hendrerit. Phasellus venenatis eros ac faucibus volutpat. Ut sed feugiat dui. Phasellus aliquet quam vel accumsan tincidunt. In facilisis at dolor a rhoncus. Ut facilisis urna nibh, in venenatis nibh sodales malesuada. Donec accumsan ipsum eu ligula maximus auctor. Nam dictum augue luctus, tempor nibh dictum, fermentum purus. Mauris ac condimentum tortor. Phasellus porttitor laoreet tempus. Curabitur in ullamcorper mauris, nec congue orci. Nunc euismod libero at dapibus dapibus. Curabitur laoreet nunc eu odio pulvinar bibendum. Sed varius molestie lectus vitae commodo. Mauris rhoncus nulla in eros gravida efficitur. Morbi nec tellus lorem. Aenean ultricies nisl arcu, sed pretium ante dictum vel. Nam finibus odio non nulla scelerisque feugiat. Sed euismod vitae mauris in fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo. Nam sit amet lorem non nisl aliquet ornare. Nunc eget volutpat magna. Nam commodo dui eget eros placerat porta. Aenean rutrum ligula ac neque tempor, facilisis aliquam quam sagittis. Vivamus porttitor finibus lobortis. Suspendisse ac libero leo. Vivamus diam enim, commodo vulputate tellus eget, vehicula pulvinar sapien. Nullam cursus placerat nisi, ut pretium ante dictum at. Cras pulvinar pulvinar sapien porta hendrerit. Phasellus venenatis eros ac faucibus volutpat. Ut sed feugiat dui. Phasellus aliquet quam vel accumsan tincidunt. In facilisis at dolor a rhoncus. Ut facilisis urna nibh, in venenatis nibh sodales malesuada. Donec accumsan ipsum eu ligula maximus auctor. Nam
