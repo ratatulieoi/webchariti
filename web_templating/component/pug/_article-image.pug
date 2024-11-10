@@ -1,11 +1,11 @@
-mixin article-image 
-        .article-card-image-news
-            .image-placeholder-news
-                img(src="web_templating/image/event4.png", alt="Article Image")
-            .article-content-news
-                h3 Turning your emergency donation
-                h3 into instant aid
-                .author-news-image
-                    i.fa.fa-user
-                    img.user-icon(src="web_templating/image/user.svg", alt="")
-                    span JOHN SMITH
+mixin articleImage(imgSrc, imgAlt, title1, title2, authorName, authorImg)
+    .article-card-image-news
+        .image-placeholder-news
+            img(src=imgSrc, alt=imgAlt)
+        .article-content-news
+            h3= title1
+            h3= title2
+            .author-news-image
+                i.fa.fa-user
+                img.user-icon(src=authorImg, alt="User Icon")
+                span= authorName

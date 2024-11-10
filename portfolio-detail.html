@@ -45,23 +45,31 @@
     </div>
     <div class="container">
       <div class="sec-portfolio-detail"> 
-        <div class="sec-image-atas"><img src="web_templating/image/portfolio1.png" alt=""></div>
+        <div class="sec-image-atas"><img id="portfolioImage" src="web_templating/image/portfolio1.png" alt=""></div>
         <div class="sec-text-1">
           <h2>Project Details</h2>
-          <p>Excepteur emergent, minim veniam anim aute carefully curated Ginza conversation. Exquisite and perfect nostrud nisi intricate content. First-class, punctual, and essential. Adipisicing lovely queen tempor eiusmod irure. Exclusive izakaya, charming Scandinavian style, impeccable aute quality. Life is full of soft power from Melbourne's culture and occaecat discerning tastes. Qui wardrobe aliquip, et Porter destination Toto; remarkable officia in Helsinki for Basset hounds. Zürich’s perfect and comfortable life is what consectetur represents.</p>
+          <p>This project explores the fusion of modern architecture with sustainable design. It highlights how eco-friendly materials can be integrated without sacrificing aesthetics, creating a space that's both functional and environmentally conscious.</p>
         </div>
         <div class="garislurus1"> </div>
         <div class="sec-text-1">
           <h2>Project Details</h2>
-          <p>Excepteur emergent, minim veniam anim aute carefully curated Ginza conversation. Exquisite and perfect nostrud nisi intricate content. First-class, punctual, and essential. Adipisicing lovely queen tempor eiusmod irure. Exclusive izakaya, charming Scandinavian style, impeccable aute quality. Life is full of soft power from Melbourne's culture and occaecat discerning tastes. Qui wardrobe aliquip, et Porter destination Toto; remarkable officia in Helsinki for Basset hounds. Zürich’s perfect and comfortable life is what consectetur represents.</p>
+          <p>A bold exploration into interactive web design, this project focuses on using cutting-edge web technologies to create immersive user experiences. Through responsive design and engaging visuals, it redefines the traditional digital landscape.</p>
         </div>
         <div class="sec-image-atas"><img src="web_templating/image/portfolio2.png" alt=""></div>
         <div class="sec-text-1">
           <h2>Project Details</h2>
-          <p>Excepteur emergent, minim veniam anim aute carefully curated Ginza conversation. Exquisite and perfect nostrud nisi intricate content. First-class, punctual, and essential. Adipisicing lovely queen tempor eiusmod irure. Exclusive izakaya, charming Scandinavian style, impeccable aute quality. Life is full of soft power from Melbourne's culture and occaecat discerning tastes. Qui wardrobe aliquip, et Porter destination Toto; remarkable officia in Helsinki for Basset hounds. Zürich’s perfect and comfortable life is what consectetur represents.</p>
+          <p>This project presents an innovative approach to digital marketing, using data-driven insights to craft personalized campaigns. With an emphasis on user engagement, it leverages the power of social media to connect brands with their audience in unique ways.</p>
         </div>
       </div>
     </div>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const image = urlParams.get('image');
+      
+      if (image) {
+          document.getElementById('portfolioImage').src = image;
+      }
+    </script>
     <body>
       <footer class="footer">
         <div class="containerfooter"> 

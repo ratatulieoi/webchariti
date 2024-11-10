@@ -1,35 +1,35 @@
 .article-section-portfolio2 {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 32px;
+    gap: 5rem;
     border-radius: 10px;
     background-color: black;
 }
 
-.gambar-article-portfolio {
+.gambar-article-portfolio2 {
     width: 485px;
     height: 350px;
     background-color: #ccc;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
-.teks-konten {
+.article-text {
     max-width: 300px;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Poppins';
     color: aliceblue;
 }
 
-.teks-konten h1 {
+.article-text h1 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.teks-konten h2 {
+.article-text h2 {
     font-size: 20px;
     margin-bottom: 20px;
 }
