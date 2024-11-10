@@ -1,7 +1,8 @@
-mixin article-gambar2
-                    img.gambar-article-portfolio(src="web_templating/image/event4.png", alt="")
-                    .teks-konten
-                        h1 Heading
-                        h2 Subheading
-                        p Body text for your article or post. Insert some lorem ipsum if you are unsure what to put here. More page might look like this.
-                        p Explained above everything, wisdom genuine saw sex shut end branch anxiously. Composed bliss conversation exquisite provision solicitude unreserved admitting. Connect up intellectual as do real less in. Favoured at set old trifling. Charming lively household sensible it. Excellence any sincerity interested so. Shewing civilly moonlight up for admire style. Kind led own up
+mixin articleGambar2(image, alt, title, subtitle, description, moreText)
+    .article-section-portfolio2
+        img.gambar-article-portfolio2(src=image, alt=alt)
+        .article-text
+            h1= title
+            h2= subtitle
+            p= description
+            p= moreText

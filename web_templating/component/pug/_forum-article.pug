@@ -1,6 +1,6 @@
-mixin article-forum(data)
-        .sec-article-forum
-            img(src="web_templating/image/portfolio3.png", alt="")
-            .text-content-forum
-                h2 Budget for the Organization You Want to be
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed justo velit. Suspendisse sed libero quis erat rhoncus fringilla id non mauris. Praesent aliquet vel diam eu egestas. Aliquam dui augue, fermentum quis pretium in
+mixin articleForum(imgSrc, imgAlt, title, description)
+    .sec-article-forum
+        img(src=imgSrc, alt=imgAlt)
+        .text-content-forum
+            h2= title
+            p= description

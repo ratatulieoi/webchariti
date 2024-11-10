@@ -1,21 +1,38 @@
 extends template.pug
 include web_templating/component/pug/_text-portfolio-details.pug
+
 block head 
     link(rel="stylesheet", href="web_templating/csshalaman/porftolio-detail.css")
     link(rel="stylesheet", href="web_templating/csshalaman/global.css")
     link(rel="stylesheet", href="web_templating/component/css/text-portfolio-details.css")
     title Portfolio Details
+
 block menu 
     +menu
     +atas('Portftolio Details')
+
 block main 
     .container
         .sec-portfolio-detail 
             .sec-image-atas
-                img(src="web_templating/image/portfolio1.png", alt="")
-            +text-portfolio-details 
+                img(id="portfolioImage", src="web_templating/image/portfolio1.png", alt="") 
+            +text-portfolio-details({
+                text: "This project explores the fusion of modern architecture with sustainable design. It highlights how eco-friendly materials can be integrated without sacrificing aesthetics, creating a space that's both functional and environmentally conscious."
+            })
             .garislurus1 
-            +text-portfolio-details
+            +text-portfolio-details({
+                text: "A bold exploration into interactive web design, this project focuses on using cutting-edge web technologies to create immersive user experiences. Through responsive design and engaging visuals, it redefines the traditional digital landscape."
+            })
             .sec-image-atas
-                img(src="web_templating/image/portfolio2.png", alt="")
-            +text-portfolio-details
+                img(src="web_templating/image/portfolio2.png", alt="") 
+            +text-portfolio-details({
+                text: "This project presents an innovative approach to digital marketing, using data-driven insights to craft personalized campaigns. With an emphasis on user engagement, it leverages the power of social media to connect brands with their audience in unique ways."
+            })
+
+    script.
+        const urlParams = new URLSearchParams(window.location.search);
+        const image = urlParams.get('image');
+        
+        if (image) {
+            document.getElementById('portfolioImage').src = image;
+        }
