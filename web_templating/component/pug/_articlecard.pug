@@ -1,9 +1,9 @@
-mixin article 
+mixin article(imagePath, title, description)
     .articlecard 
-        img.gambar(src="web_templating/image/galeri5.png")
+        img.gambar(src=imagePath, alt=title)
         .info 
-            h1 STARVING    
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorm
+            h1= title    
+            p= description
         .articlebutton 
             +button('Donate')
 
