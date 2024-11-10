@@ -1,9 +1,9 @@
-mixin shop
+mixin shop(imagePath, title, description)
     .shopcard 
       .framegambar
-        img(src="web_templating/image/cingur.png", alt="")
+        img(src=imagePath, alt=title)
         .info 
-          h2 RUJAK CINGURR
-          p jafnhuifhuiahfguieahguiahguiahfuiahfuv iahdfuiahfuihfuihdfuih
+          h2= title
+          p= description
         .shopbutton 
           +button ('Add to Cart')
