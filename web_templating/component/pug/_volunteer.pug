@@ -1,7 +1,8 @@
-mixin volunteer
+mixin volunteer(imagePath, position, name)
     .volunteer
-        img(src="web_templating/image/hitler.png", alt="")
+        img(src=imagePath, alt=name)
         .volunteertxt 
-          p COMPANY OWNER
-          b DRS. NAME NAME
+          p= position
+          b= name
+
         
