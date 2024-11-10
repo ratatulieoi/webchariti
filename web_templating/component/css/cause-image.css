@@ -8,7 +8,7 @@
     
     .card-image-cause {
       text-align: center;
-      width: 100%;
+      width: 65rem;
       height: 100%;
     }
     .card-image-cause img{
@@ -21,6 +21,7 @@
       padding-left: 2rem;
       padding-top: 1rem;
       padding-right: 2rem;
+      width: 110rem;
     }
     
     .progress-bar-cause {
