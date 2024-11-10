@@ -1,0 +1,36 @@
+.content-text-up{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    color: aliceblue;
+}
+.sec-program-img{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.container-program-bottom{
+    display: flex;
+    background-color: #D1EBDB;
+    height: 250px;
+}
+.sec-program-bottom{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding-top: 3rem;
+}.container-card-mission{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    background-color: #D1EBDB;
+    padding-bottom: 5rem;
+}
