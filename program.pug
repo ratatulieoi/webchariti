@@ -13,56 +13,27 @@ block menu
     +menu 
     +atas('Our Program')
 
-block main 
+block main
+    - var programImages = [{ src: "web_templating/image/event8.png", alt: "Program Image" }, { src: "web_templating/image/event3.png", alt: "Program Image" }, { src: "web_templating/image/event1.png", alt: "Program Image" }, { src: "web_templating/image/event2.png", alt: "Program Image" }, { src: "web_templating/image/event6.png", alt: "Program Image" }, { src: "web_templating/image/event4.png", alt: "Program Image" }, { src: "web_templating/image/event3.png", alt: "Program Image" }, { src: "web_templating/image/event10.png", alt: "Program Image" }]
+    - var programCards = [{ icon: "web_templating/image/icon2.png", title: "Donation", description: "Halosaur duckbilled barracuda, goosefish gar pleco, chum salmon, sawfish whitefish orbicular batfish" }, { icon: "web_templating/image/Book open.svg", title: "Education", description: "Michog paradise fish! Triggerfish bango guppy opah sunfish bluntnose knifefish upside down" }, { icon: "web_templating/image/icon4.png", title: "Empowerment", description: "Long-finned char cookie-cutter shark paradise fish! Triggerfish bango guppy shark saw" }, { icon: "web_templating/image/icon1.png", title: "Health", description: "Catfish cobia spookfish convict cichlid cat shark saw shark trout cod barracuda long-finned" }]
+    
     .container 
         .content-text-up
             h4 Cause our Program 
-            h1 Various thing we help in whole world
+            h1 Various things we help in the whole world
             p Michog paradise fish! Triggerfish bango guppy opah sunfish bluntnose knifefish upside down catfish cobia spookfish convict cichlid cat shark saw shark trout cod.
             .garislurus
-        
-        .sec-program-img 
-            +programImg(
-                "web_templating/image/event8.png",
-                "Program Image"
-            )
-            +programImg(
-                "web_templating/image/event3.png",
-                "Program Image"
-            )
-            +programImg(
-                "web_templating/image/event1.png",
-                "Program Image"
-            )
-            +programImg(
-                "web_templating/image/event2.png",
-                "Program Image"
-            )
-            +programImg(
-                "web_templating/image/event6.png",
-                "Program Image"
-            )
-            +programImg(
-                "web_templating/image/event4.png",
-                "Program Image"
-            )
-            +programImg(
-                "web_templating/image/event3.png",
-                "Program Image"
-            )
-            +programImg(
-                "web_templating/image/event10.png",
-                "Program Image"
-            )
+
+        .sec-program-img
+            each image in programImages
+                +programImg(image.src, image.alt)
 
         .container-program-bottom    
             .sec-program-bottom 
                 h1 The right program at The right time
                 h5 Our Mission 
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed justo velit.
+
         .container-card-mission
-            +programCard("web_templating/image/icon2.png", "Donation", "Halosaur duckbilled barracuda, goosefish gar pleco, chum salmon, sawfish whitefish orbicular batfish")
-            +programCard("web_templating/image/Book open.svg", "Education", "Michog paradise fish! Triggerfish bango guppy opah sunfish bluntnose knifefish upside down")
-            +programCard("web_templating/image/icon4.png", "Empowerment", "Long-finned char cookie-cutter shark paradise fish! Triggerfish bango guppy shark saw")
-            +programCard("web_templating/image/icon1.png", "Health", "Catfish cobia spookfish convict cichlid cat shark saw shark trout cod barracuda long-finned") 
-            
+            each card in programCards
+                +programCard(card.icon, card.title, card.description)
