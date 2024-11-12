@@ -32,18 +32,35 @@ block main
             .boxgallery1
                 img(src="web_templating/image/galeri8.png", alt="") 
         .gallery2sec
-            .gambartengah   
-                img(src="web_templating/image/galeri3.png", alt="")
-            .pagination
-                a(href="#") &laquo;
-                a(href="#") 1
-                a(href="#") 2
-                a(href="#") 3
-                a(href="#") 4
-                a(href="#") 5
-                a(href="#") 6
-                a(href="#") &raquo;
-        .gallery3sec
+            input#page1(type="radio", name="gallery", checked)
+            input#page2(type="radio", name="gallery")
+            input#page3(type="radio", name="gallery")
+            input#page4(type="radio", name="gallery")
+            input#page5(type="radio", name="gallery")
+            input#page6(type="radio", name="gallery")
             .gambartengah
+                .image-container
+                    img(src="web_templating/image/healthafrica.jpg", alt="")
+                .image-container
+                    img(src="web_templating/image/education.jpg", alt="")   
+                .image-container
+                    img(src="web_templating/image/galeri3.png", alt="")
+                .image-container
+                    img(src="web_templating/image/frieren.png", alt="")
+                .image-container
+                    img(src="web_templating/image/volunteerbenefit.jpg", alt="")
+                .image-container
+                    img(src="web_templating/image/foodcause.jpg", alt="")
+            .pagination
+                label(for="page1") &laquo;
+                label(for="page1") 1
+                label(for="page2") 2
+                label(for="page3") 3
+                label(for="page4") 4
+                label(for="page5") 5
+                label(for="page6") 6
+                label(for="page6") &raquo;
+
+        .gallery3sec
+            .playtengah
                 img(src="web_templating/image/Play circle.png", alt="")
-           
