@@ -1,0 +1,7 @@
+mixin eventSection(title, text, image)
+  .howto
+    h1= title
+    p= text
+  if image
+    .howtoimg
+      img(src=image, alt=title)

@@ -2,32 +2,21 @@ extends template.pug
 include web_templating/component/pug/_button.pug
 include web_templating/component/pug/cause-image.pug
 
+
 block head
     link(rel="stylesheet", href="web_templating/component/css/cause-image.css")
     link(rel="stylesheet", href="web_templating/component/css/button.css")
     link(rel="stylesheet", href="web_templating/csshalaman/global.css")
     link(rel="stylesheet", href="web_templating/csshalaman/our-cause.css")
     title Cause
+
 block menu 
     +menu
     +atas('Our Cause')
+
 block main
     .container
         .sec-cause
             .sec-cause-article
-                +cause-image("web_templating/image/healthafrica.jpg", "Health Cause", 65, "$90,000.00", "Health care is one of the most important things in our life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
-                +cause-image("web_templating/image/africawater.jpg", "Water Resources", 76, "$60,000.00", "Water is one of the most important things in our life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
-                +cause-image("web_templating/image/recycle.jpg", "Waste Recycle", 60, "$32,000.00", "Waste recycle is one of the most important things in our life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
-                +cause-image("web_templating/image/education.jpg", "Good Education", 39, "$10,000.00", "Good education leads to a better life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem.")
-                +cause-image("web_templating/image/foodcause.jpg", "Food Cause", 50, "3,000.00", "Food is one of the most important things in our life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
-                +cause-image("web_templating/image/causeimage.png", "Creeper Explosion", 100, "$30,000.00", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
-            .kanancause
-                .kaneki-sec
-                    h1 Want to Donate by Phone
-                    p Not a Problem, Call Us Now
-                    h1 +62 087848934 (Indonesia)
-                    p Or email Us :
-                    h1 uhuyuhuy@gmail.com
-                .uhuy   
-                    h1 UHYHUYHUYHUYUHUY 
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, s 
+                each cause in [{ image: "web_templating/image/healthafrica.jpg", title: "Health Cause", progress: 65, amount: "$90,000.00", description: "Health care is one of the most important things in our life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit." },{ image: "web_templating/image/africawater.jpg", title: "Water Resources", progress: 76, amount: "$60,000.00", description: "Water is one of the most important things in our life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit." },{ image: "web_templating/image/recycle.jpg", title: "Waste Recycle", progress: 60, amount: "$32,000.00", description: "Waste recycle is one of the most important things in our life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit." },{ image: "web_templating/image/education.jpg", title: "Good Education", progress: 39, amount: "$10,000.00", description: "Good education leads to a better life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem." },{ image: "web_templating/image/foodcause.jpg", title: "Food Cause", progress: 50, amount: "$3,000.00", description: "Food is one of the most important things in our life. It is the first step towards a healthy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit." },{ image: "web_templating/image/causeimage.png", title: "Creeper Explosion", progress: 100, amount: "$30,000.00", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }]
+                    +cause-image(cause.image, cause.title, cause.progress, cause.amount, cause.description)

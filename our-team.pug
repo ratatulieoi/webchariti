@@ -8,36 +8,44 @@ block head
     link(rel="stylesheet", href="web_templating/csshalaman/global.css")
     link(rel="stylesheet", href="web_templating/component/css/button.css")
     title Team
+
 block menu 
     +menu
     +atas('Our Team')
+
 block main 
-    .container
-        .judul-team-sec
-            .h1-container-team
-                h1 Our Team
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo.
-        .team-section
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "DRS. JOHN DOE")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "ZENDRIK JOHN")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "ANTHONY")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "RIKO")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "USMAN")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "BENEDICT")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "INTEK")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "QUDDUS")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "ENZO")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "OLIVER WILLIAMS")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "PETER PAN") 
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "SAMUEL")
-        .button-team
-                +button('Load More')
-        .line-arrow-team
-            img(src="web_templating/image/Line 9.svg", alt="")
-        .gambar-lingkaran
-            img(src="web_templating/image/Ellipse 19.svg", alt="")
-            h1.text-lingkaran Want to get Involved
-        .text-gambar-lingkaran
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo. Nam sit amet lorem non nisl aliquet ornare. Nunc eget volutpat magna. Nam commodo dui eget eros placerat porta. Aenean rutrum ligula ac neque tempor, facilisis aliquam quam sagittis.
-        .button-team-bawah 
-                +button('Join Us!')
+  - 
+    var teamList = [
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "DRS. JOHN DOE" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "ZENDRIK JOHN" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "ANTHONY" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "RIKO" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "USMAN" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "BENEDICT" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "INTEK" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "Jokowi" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "ENZO" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "OLIVER WILLIAMS" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "PETER PAN" },
+        { image: "web_templating/image/hitler.png", title: "COMPANY OWNER", name: "SAMUEL" }
+    ]
+
+  .container
+    .judul-team-sec
+      .h1-container-team
+        h1 Our Team
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo.
+    .team-section
+      each volunteer in teamList
+        +volunteer(volunteer.image, volunteer.title, volunteer.name)
+    .button-team
+      +button('Load More')
+    .line-arrow-team
+      img(src="web_templating/image/Line 9.svg", alt="")
+    .gambar-lingkaran
+      img(src="web_templating/image/Ellipse 19.svg", alt="")
+      h1.text-lingkaran Want to get Involved
+    .text-gambar-lingkaran
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui, eu molestie sapien. Proin ac rutrum magna, id pulvinar enim. Pellentesque id eros quis libero facilisis luctus sed eget leo. Nam sit amet lorem non nisl aliquet ornare. Nunc eget volutpat magna. Nam commodo dui eget eros placerat porta. Aenean rutrum ligula ac neque tempor, facilisis aliquam quam sagittis.
+    .button-team-bawah
+      +button('Join Us!')

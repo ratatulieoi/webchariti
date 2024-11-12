@@ -1,27 +1,20 @@
 extends template.pug 
+include web_templating/component/pug/_event-section.pug
 
 block head 
-    link(rel="stylesheet", href="web_templating/csshalaman/eventclick.css")
-    title Event Details
-block menu 
-    +menu
-    +atas('Event Details')
+  link(rel="stylesheet", href="web_templating/csshalaman/eventclick.css")
+  title Event Details
 
+block menu 
+  +menu
+  +atas('Event Details')
 
 block main 
-    .container 
-        .howto
-            h1 How to build a loyal communnity offlines
-            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        .howtoimg 
-            img(src="web_templating/image/event1.png", alt="")
-        .howto 
-            h1 Event messages
-            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        .usefulimg 
-            img.useful1(src="web_templating/image/event10.png", alt="")
-            img.useful1(src="web_templating/image/event11.png", alt="")
-        .howto 
-            h1 Event details
-            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-        
+  .container
+    each section in [{title: "How to build a loyal community offline",text: "This guide explores methods for strengthening community bonds through offline engagement. It draws from years of experience in the industry and offers strategies that have been proven effective.",image: "web_templating/image/event1.png"},{title: "Event Messages",text: "Gain insights into the importance of communication and how to craft messages that resonate with audiences. Our event messaging guidelines help bridge the gap between brands and communities. Lorem ipsum acumalaka is simply dumply text of the printing and typesetting industry, standar dummy text ever since the 1500s, when an uknown printer took a gallery."}]
+      +eventSection(section.title, section.text, section.image)
+
+    .usefulimg 
+      each usefulImage, index in [{src: "web_templating/image/event10.png",title: "Explore New Perspectives",text: "Discover the impact of effective networking and community engagement, building meaningful relationships that foster growth."},{src: "web_templating/image/event11.png",title: "Achieving Success Together",text: "Learn strategies for collective success, and how shared goals can enhance community spirit and drive innovation."}]
+        img.useful1(src=usefulImage.src, alt=usefulImage.title)
+        +eventSection(usefulImage.title, usefulImage.text)

@@ -9,10 +9,17 @@ block head
     link(rel="stylesheet", href="web_templating/component/css/cause-image.css")
     link(rel="stylesheet", href="web_templating/component/css/button.css")
     link(rel="stylesheet", href="web_templating/component/css/inputan.css")
+
 block menu
     +menu
     +atas('Make a Donation')
+
 block main
+    - const donationAmounts = [10, 20, 30, 40, 50]
+    - const paymentMethods = ['PayPal', 'Credit Card']
+    - const loginInputs = [{ label: 'Email*', placeholder: 'Masukkan email' },{ label: 'Password*', placeholder: 'Masukkan password' }]
+    - const personalDetailsInputs = [{ label: 'First Name*', placeholder: 'Masukkan nama' },{ label: 'Last Name*', placeholder: 'Masukkan nama' },{ label: 'Email*', placeholder: 'Masukkan email' },{ label: 'Phone*', placeholder: 'Masukkan Nomor' }]
+
     .container
         .articledonat
             .card-section-causedo
@@ -25,46 +32,48 @@ block main
                         .progress-cause(style='width: 92%') 92%
                     span Goal: $30,000.00
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus pretium orci in pharetra. Vivamus eget sodales nunc. Phasellus ut porta dui eu molestie sapien.   
+        
         .bawaharticledonat
             h1.log Login to Donate
-            .input1     
-                +input('Email*','Masukkan email')
-                +input('Password*','Masukkan password')
+            .input1
+                each input in loginInputs
+                    +input(input.label, input.placeholder)
                 +button('Login')
             .teksdonat  
                 p With an account, you will be able to view your past contributions and follow favourite projects.
+            
             .garislurus
+            
             .iniadadonasi
                 .personald
                     .createacc 
                         h1 Or Donate with an Account
                         h2 Personal details 
                     .input2 
-                        +input('First Name*','Masukkan nama')
-                        +input('Last Name*','Masukkan nama')
-                        +input('Email*','Masukkan email')
-                        +input('Phone*','Masukkan Nomor')
+                        each input in personalDetailsInputs
+                            +input(input.label, input.placeholder)
+                
                 .donation-box
                     h3 Select Donation Amount
                     .donation-amounts
-                        button.amount 10
-                        button.amount 20
-                        button.amount 30
-                        button.amount 40
-                        button.amount 50
+                        each amount in donationAmounts
+                            button.amount= amount
+                        
                     .other-amount
                         input(type="text" placeholder="Other Amount (USD)")
+                    
                     h4 Payment Method
                     .payment-methods
-                        button.payment-btn PayPal
-                        button.payment-btn Credit Card
+                        each method in paymentMethods
+                            button.payment-btn= method
+                        
                     .card-logos
-                        img(src="web_templating/image/bank-card.png" alt="Visa")
+                        img(src="web_templating/image/bank-card.png", alt="Visa")
 
                     .donsasinow
                         +button('DONATE NOW')
+            
             .garislurus
             .teksdonatbawah     
                 h4 Our Promise 
                 p Without your loyal support, we couldn’t do the vital work we do. That’s why we promise to uphold the highest ethical standards. You can send through any feedback or grievances here.
-       

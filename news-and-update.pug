@@ -1,68 +1,19 @@
 extends template.pug 
 include web_templating/component/pug/_news-image.pug
-include web_templating/component/pug/_article-image.pug
+
 block head 
   link(rel="stylesheet", href="web_templating/csshalaman/news.css")
   link(rel="stylesheet", href="web_templating/component/css/news-image.css")
   link(rel="stylesheet", href="web_templating/component/css/article-image-news.css")
   title News Update
+
 block menu 
     +menu
     +atas('News & Update')
+
 block main 
   .container 
     .puki 
       .news-image-sec
-        +newsImage(
-          "web_templating/image/article.png",
-          "Gambar Berita",
-          "News",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou."
-      )
-        +newsImage(
-          "web_templating/image/event2.png",
-          "Gambar Berita",
-          "News",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou."
-      )
-        +newsImage(
-          "web_templating/image/event3.png",
-          "Gambar Berita",
-          "News",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou."
-      )
-        +newsImage(
-          "web_templating/image/event4.png",
-          "Gambar Berita",
-          "News",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou."
-      )
-      .text-section-news 
-        h1 Title
-        h2 Sub-title
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou
-        h1 Recent Article
-        +articleImage(
-            "web_templating/image/event4.png",
-            "Article Image",
-            "Turning your emergency donation",
-            "into instant aid",
-            "JOHN SMITH",
-            "web_templating/image/user.svg"
-        )
-        +articleImage(
-            "web_templating/image/event7.png",
-            "Article Image",
-            "Turning your emergency donation",
-            "into instant aid",
-            "Kanaeru",
-            "web_templating/image/user.svg"
-        )
-        +articleImage(
-            "web_templating/image/event3.png",
-            "Article Image",
-            "Turning your emergency donation",
-            "into instant aid",
-            "UdinBakarMaknyuss",
-            "web_templating/image/user.svg"
-        )
+        each newsItem in [{image: "web_templating/image/article.png",alt: "Gambar Berita",title: "News",text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou."},{image: "web_templating/image/event2.png",alt: "Gambar Berita",title: "News",text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou."},{image: "web_templating/image/event3.png",alt: "Gambar Berita",title: "News",text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou."},{image: "web_templating/image/event4.png",alt: "Gambar Berita",title: "News",text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua jika iloveyou."}]
+          +newsImage(newsItem.image, newsItem.alt, newsItem.title, newsItem.text)
