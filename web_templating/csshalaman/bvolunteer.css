@@ -77,9 +77,9 @@
     background-blend-mode: overlay;
     background-color: #192524;
     width: 100%;
-    height: 700px;
+    height: 755px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
@@ -93,7 +93,10 @@
     padding-right: 100px;
     color: aliceblue;
 }
-
+.infoteks{
+    flex: 0 0 50%;
+    padding: 3rem;
+}
 .garousecinfo h1{
     color: aliceblue;
     padding-top: 2rem;

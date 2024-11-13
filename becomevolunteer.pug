@@ -19,7 +19,9 @@ block main
             .letshelpinfo
                 h1 Let's Help Together
                 p Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same. Most organizations that are charities are required to registered with the appropriate regulato
-
+                .bvbtnatas
+                    +button('Email Us')
+                    +button('Contact Us')
 
             .letshelpimg
                 img.bvimg1(src="web_templating/image/Aboutcharity.png", alt="")
@@ -34,7 +36,7 @@ block main
                 p Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same. Most organizations that are charities are required to registered with the appropriate regulato principles are the same. Most organizations that are charities are required to registered with the appropriate regulato
 
         .garousec
-            each info in [{ step: '01', description: 'Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same.' },{ step: '02', description: 'Most organizations that are charities are required to registered with the appropriate regulatory body.' },{ step: '03', description: 'Charitable organizations must adhere to regulations set out by respective jurisdictions.' },{ step: '04', description: 'Transparency and accountability are essential principles for charities to function properly.' }]
+            each info in [{ step: '01', description: 'Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same. lorem ipsLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat fermentum euismod. Nulla metus massa, volutpat nec purus eu, aliquam consequat diam. Curabitur tempor ante in tellus iaculis, interdum dictum est aliquet. Suspendisse commodo feugiat sodales. Phasellus pulvinar commodo purus, vitae lacinia ex sodales tempo' },{ step: '02', description: 'Most organizations that are charities are required to registered with the appropriate regulatory body.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat fermentum euismod. Nulla metus massa, volutpat nec purus eu, aliquam consequat diam. Curabitur tempor ante in tellus iaculis, interdum dictum est aliquet. Suspendisse commodo feugiat sodales. Phasellus pulvinar commodo purus, vitae lacinia ex sodales tempo' },{ step: '03', description: 'Charitable organizations must adhere to regulations set out by respective jurisdictions. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat fermentum euismod. Nulla metus massa, volutpat nec purus eu, aliquam consequat diam. Curabitur tempor ante in tellus iaculis, interdum dictum est aliquet. Suspendisse commodo feugiat sodales. Phasellus pulvinar commodo purus, vitae lacinia ex sodales tempo' },{ step: '04', description: 'Transparency and accountability are essential principles for charities to function properly.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat fermentum euismod. Nulla metus massa, volutpat nec purus eu, aliquam consequat diam. Curabitur tempor ante in tellus iaculis, interdum dictum est aliquet. Suspendisse commodo feugiat sodales. Phasellus pulvinar commodo purus, vitae lacinia ex sodales tempo' }]
                 +howItWorks(info)
 
         .benefitsec

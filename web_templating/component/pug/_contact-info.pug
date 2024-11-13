@@ -1,7 +1,7 @@
 mixin contactInfo(contactData)
   .contact-sec-icon
     each contact in contactData
-      i.fa-solid(class=contact.iconClass)
+      .fo-solid(class=contact.iconClass)
         img(src=contact.imgSrc, alt=contact.imgAlt)
         h1= contact.title
         p= contact.description

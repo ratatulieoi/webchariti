@@ -8,6 +8,7 @@
   padding-bottom: 2rem;
   padding-top: 2rem;
   gap: 4rem;
+  color: aliceblue;
 }
 
 .contact-sec-icon .icon {
@@ -17,10 +18,12 @@
 
 .contact-sec-icon h1 {
   margin-top: 20px;
+  font-family:poppins;
 }
 
 .contact-sec-icon p {
   margin-top: 10px;
+  font-family:poppins;
 }
 .text-center-section{
   display: flex;
