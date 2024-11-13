@@ -4,6 +4,9 @@ include web_templating/component/pug/_button.pug
 include web_templating/component/pug/_shop.pug
 include web_templating/component/pug/_iconchariti.pug
 include web_templating/component/pug/_volunteer.pug
+include web_templating/component/pug/_news-item.pug
+include web_templating/component/pug/_event-item.pug
+include web_templating/component/pug/_gallery-image.pug
 
 block head
     link(rel="stylesheet", href="web_templating/component/css/articlecard.css")
@@ -13,117 +16,117 @@ block head
     link(rel="stylesheet", href="web_templating/component/css/volunteer.css")
     link(rel="stylesheet", href="web_templating/component/css/gambaratas.css")
     link(rel="stylesheet", href="web_templating/csshalaman/index.css")
-    title Home 
-block menu 
+    title Home
+
+block menu
     +menu
-    +atas('Home is Life','Lorem Ipsum Dolor Sit Amet')
+    +atas('Home is Life', 'Lorem Ipsum Dolor Sit Amet')
+
 block main
-        .homembik
-            .homembikl Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                .buttonembik
-                    a(href="becomevolunteer.html") <-BECOME A VOLUNTEER
-            .homembikm Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                .buttonembik
-                    a(href="donation.html") <-DONATE NOW 
-            .homembikg
-                img(src="web_templating/image/background1.png", alt="")
-        .container
-            .textpage
-                h1 Our Cause
-                .btntextpage 
-                    +button('More Cause','our-cause.html')
+    .homembik
+        .homembikl Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .buttonembik
+                a(href="becomevolunteer.html") <-BECOME A VOLUNTEER
+        .homembikm Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .buttonembik
+                a(href="donation.html") <-DONATE NOW
+        .homembikg
+            img(src="web_templating/image/background1.png", alt="")
 
-            .articlehomesec
-                .articlehome
-                    img(src="web_templating/image/homearticle.png", alt="")
-                    .articlehometext 
-                        h1 We Help People
-                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorm
-                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    .btarticlehome
-                        +button('Read More')
-            .articlehome2 
-                +article("web_templating/image/galeri5.png", "STARVING", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget.")
-                +article("web_templating/image/galeri6.png", "NEW HOPE", "Deskripsi singkat mengenai artikel New Hope yang inspiratif dan informatif.")
-                +article("web_templating/image/galeri5.png", "STARVING", "Lorem ipsum dolor sit amet, Lorem consectetur adipiscing elit. Amet, tortor, sed eget. get. Lorem ipsum dol.")
-            .whoarewesec
-                .kotak 
-                    h1 Who Are We?
-                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget. get. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ald do eiusmod tempor incididunt ut labore et dolore magna 
-                img.kotak(src="web_templating/image/whatarewe.png", alt="")
-                img.kotak(src="web_templating/image/whoarewe.png", alt="")
-                .kotaka 
-                    h1 What Are We?
-                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ald do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .iconsechome
-                +icon
-            .textpage 
-                h1 News & Updates
-                .btntextpage
-                    +button('More News')
-            .newsupsec
-                .kotaknewsup
-                    img(src="web_templating/image/event1.png", alt="")
-                    .kotaknewstext Partnering to create a community
-                .kotaknewsup
-                    img(src="web_templating/image/volunteer5.png", alt="")
-                    .kotaknewstext Lorem ipsum dolor sit amet, consectetur 
-                .kotaknewsup
-                    img(src="web_templating/image/volunteer1.png", alt="")
-                    .kotaknewstext Lorem ipsum dolor sit amet, consectetur 
-                .kotaknewsup
-                    img(src="web_templating/image/volunteer3.png", alt="")
-                    .kotaknewstext Lorem ipsum dolor sit amet, consectetur 
-                .kotaknewsup
-                    img(src="web_templating/image/volunteer2.png", alt="")
-                    .kotaknewstext Lorem ipsum dolor sit amet, consectetur 
-                .kotaknewsup
-                    img(src="web_templating/image/volunteer4.png", alt="")
-                    .kotaknewstext Lorem ipsum dolor sit amet, consectetur 
-            .eventsec 
-                .textpage 
-                    h1 Upcoming Event
-                    .btntextpage
-                        +button('More Event')
-                .kotakevent
-                    img(src="web_templating/image/event7.png", alt="")
-                    .dateevent 
-                        h1 3 September
-                        p day       time place
-                        h1 12 October
-                        p day       time place
-                        h1 20 Januari
-                        p day       time place
-            .textpage 
-                h1 Our Staff
-                .btntextpage
-                    +button('More Staff')
-            .ourteamsec 
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "ENZO")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "OLIVER WILLIAMS")
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "PETER PAN") 
-                +volunteer("web_templating/image/hitler.png", "COMPANY OWNER", "SAMUEL")
-            .textpage 
-                h1 Gallery
-                .btntextpage
-                    +button('View more')
+    .container
+        .textpage
+            h1 Our Cause
+            .btntextpage 
+                +button('More Cause', 'our-cause.html')
 
-            .galleryhomesec 
-                .kotakgallery
-                    img(src="web_templating/image/event3.png", alt="")
-                .kotakgallery
-                    img(src="web_templating/image/event4.png", alt="")
-                .kotakgallery
-                    img(src="web_templating/image/galeri4.png", alt="")
-                .kotakgallery
-                    img(src="web_templating/image/galeri3.png", alt="")
-                .kotakgallery
-                    img(src="web_templating/image/galeri6.png", alt="")
-                .kotakgallery
-                    img(src="web_templating/image/galeri2.png", alt="")
-                .kotakgallery
-                    img(src="web_templating/image/galeri1.png", alt="")
-                .kotakgallery
-                    img(src="web_templating/image/event2.png", alt="")
-                
+        .articlehomesec
+            .articlehome
+                img(src="web_templating/image/homearticle.png", alt="")
+                .articlehometext
+                    h1 We Help People
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, tortor, sed eget.
+                .btarticlehome
+                    +button('Read More')
 
+        .articlehome2
+            -
+                var articles = [
+                    { img: "web_templating/image/galeri5.png", title: "STARVING", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+                    { img: "web_templating/image/galeri6.png", title: "NEW HOPE", desc: "Deskripsi singkat mengenai artikel New Hope." },
+                    { img: "web_templating/image/galeri5.png", title: "STARVING", desc: "Lorem ipsum dolor sit amet, Lorem consectetur adipiscing elit." }
+                ]
+            each item in articles
+                +article(item.img, item.title, item.desc)
+
+        .whoarewesec
+            .kotak 
+                h1 Who Are We?
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            img.kotak(src="web_templating/image/whatarewe.png", alt="")
+            img.kotak(src="web_templating/image/whoarewe.png", alt="")
+            .kotaka 
+                h1 What Are We?
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        .iconsechome
+            -
+                var icons = [
+                    { imgSrc: "path/to/image1.png", alt: "Icon 1", value: "Title 1", label: "Description 1" },
+                    { imgSrc: "path/to/image2.png", alt: "Icon 2", value: "Title 2", label: "Description 2" },
+                    { imgSrc: "path/to/image3.png", alt: "Icon 3", value: "Title 3", label: "Description 3" }
+                ]
+            each item in icons
+                +icon(item)
+
+        .textpage
+            h1 News & Updates
+            .btntextpage
+                +button('More News')
+
+        .newsupsec
+            -
+                var news = [
+                    { img: "web_templating/image/event1.png", text: "Partnering to create a community" },
+                    { img: "web_templating/image/volunteer5.png", text: "Lorem ipsum dolor sit amet, consectetur" },
+                    { img: "web_templating/image/volunteer1.png", text: "Lorem ipsum dolor sit amet, consectetur" },
+                    { img: "web_templating/image/volunteer3.png", text: "Lorem ipsum dolor sit amet, consectetur" },
+                    { img: "web_templating/image/volunteer2.png", text: "Lorem ipsum dolor sit amet, consectetur" },
+                    { img: "web_templating/image/volunteer4.png", text: "Lorem ipsum dolor sit amet, consectetur" }
+                ]
+            each item in news
+                +newsItem(item.img, item.text)
+
+        .eventsec 
+            .textpage 
+                h1 Upcoming Event
+                .btntextpage
+                    +button('More Event')
+            .kotakevent
+                img(src="web_templating/image/event7.png", alt="")
+                .dateevent 
+                    h1 3 September
+                    p day       time place
+                    h1 12 October
+                    p day       time place
+                    h1 20 Januari
+                    p day       time place
+
+        .textpage
+            h1 Gallery
+            .btntextpage
+                +button('View more')
+
+        .galleryhomesec
+            -
+                var images = [
+                    "web_templating/image/event3.png",
+                    "web_templating/image/event4.png",
+                    "web_templating/image/galeri4.png",
+                    "web_templating/image/galeri3.png",
+                    "web_templating/image/galeri6.png",
+                    "web_templating/image/galeri2.png",
+                    "web_templating/image/galeri1.png",
+                    "web_templating/image/event2.png"
+                ]
+            each img in images
+                +galleryImage(img)

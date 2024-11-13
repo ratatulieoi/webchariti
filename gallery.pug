@@ -1,36 +1,39 @@
 extends template.pug 
-
-
+include web_templating/component/pug/_gallery-image-container.pug
+include web_templating/component/pug/_gallery-box.pug
 block head 
     link(rel="stylesheet", href="web_templating/csshalaman/global.css")
     link(rel="stylesheet", href="web_templating/csshalaman/gallery.css")
     title Gallery
+
 block menu 
     +menu
     +atas('Our Gallery')
+
 block main 
     .container
         .galleryteks    
             h1 Our Gallery
                 .judulgallery   
                     h2 Poverty
+
+
         .gallery1sec
-            .boxgallery1
-                img(src="web_templating/image/galeri1.png", alt="")
-            .boxgallery1 
-                img(src="web_templating/image/galeri2.png", alt="")
-            .boxgallery1 
-                img(src="web_templating/image/galeri3.png", alt="")
-            .boxgallery1
-                img(src="web_templating/image/galeri4.png", alt="")
-            .boxgallery1
-                img(src="web_templating/image/galeri5.png", alt="")
-            .boxgallery1 
-                img(src="web_templating/image/galeri6.png", alt="")
-            .boxgallery1
-                img(src="web_templating/image/galeri7.png", alt="")
-            .boxgallery1
-                img(src="web_templating/image/galeri8.png", alt="") 
+            -
+                var galleryImages = [
+                    "web_templating/image/galeri1.png",
+                    "web_templating/image/galeri2.png",
+                    "web_templating/image/galeri3.png",
+                    "web_templating/image/galeri4.png",
+                    "web_templating/image/galeri5.png",
+                    "web_templating/image/galeri6.png",
+                    "web_templating/image/galeri7.png",
+                    "web_templating/image/galeri8.png"
+                ]
+            each src in galleryImages
+                +galleryBox(src)
+
+
         .gallery2sec
             input#page1(type="radio", name="gallery", checked)
             input#page2(type="radio", name="gallery")
@@ -38,19 +41,20 @@ block main
             input#page4(type="radio", name="gallery")
             input#page5(type="radio", name="gallery")
             input#page6(type="radio", name="gallery")
+
             .gambartengah
-                .image-container
-                    img(src="web_templating/image/healthafrica.jpg", alt="")
-                .image-container
-                    img(src="web_templating/image/education.jpg", alt="")   
-                .image-container
-                    img(src="web_templating/image/galeri3.png", alt="")
-                .image-container
-                    img(src="web_templating/image/frieren.png", alt="")
-                .image-container
-                    img(src="web_templating/image/volunteerbenefit.jpg", alt="")
-                .image-container
-                    img(src="web_templating/image/foodcause.jpg", alt="")
+                -
+                    var middleImages = [
+                        "web_templating/image/healthafrica.jpg",
+                        "web_templating/image/education.jpg",
+                        "web_templating/image/galeri3.png",
+                        "web_templating/image/frieren.png",
+                        "web_templating/image/volunteerbenefit.jpg",
+                        "web_templating/image/foodcause.jpg"
+                    ]
+                each src in middleImages
+                    +galleryImageContainer(src)
+
             .pagination
                 label(for="page1") &laquo;
                 label(for="page1") 1
