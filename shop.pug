@@ -8,24 +8,30 @@ block head
     link(rel="stylesheet", href="web_templating/component/css/button.css")
     link(rel="stylesheet", href="web_templating/component/css/shop.css")
     title Shop
+
 block menu 
     +menu
     +atas('Our Shop','Happy Shopping')
 
-
 block main
-    .container 
+    - 
+        var shopItems = [
+            { image: "web_templating/image/cingur.png", title: "RUJAK CINGUR", description: "Rujak Cingur adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting." },
+            { image: "web_templating/image/tahubulat.jpg", title: "TAHU BULAT", description: "Tahu bulat adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting." },
+            { image: "web_templating/image/lontongbalap.jpg", title: "LONTONG BALAP", description: "Lontong balap adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting." },
+            { image: "web_templating/image/sotoburik.jpg", title: "SOTO TOMGKENG", description: "Soto tongkeng adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting." },
+            { image: "web_templating/image/lalapam.jpg", title: "LALAPAM", description: "Lalapam adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting." },
+            { image: "web_templating/image/ayambakar'.jpg", title: "AYAM BAKAR", description: "Ayam bakar adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting." },
+            { image: "web_templating/image/bebekhitam.jpg", title: "BEBEK BUMBU HITAM", description: "Bebek bumbu hitam adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting." },
+            { image: "web_templating/image/nasipink.jpg", title: "NASI PINK", description: "Nasi pink adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting." },
+            { image: "web_templating/image/nasibatu.jpg", title: "NASI CAMPUR BATU", description: "Nasi campur batu adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting." }
+        ]
+
+    .container
         .ourshop    
             h1 Our shop
-        .shopcardsec 
-            +shop("web_templating/image/cingur.png", "RUJAK CINGURR", "Rujak Cingur adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting.")
-            +shop("web_templating/image/tahubulat.jpg", "TAHU BULAT", "Tahu bulat adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting.")
-            +shop("web_templating/image/lontongbalap.jpg", "LONTONG BALAP", "Lontong balap adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting.")
-            +shop("web_templating/image/sotoburik.jpg", "SOTO TOMGKENG", "Soto tongkeng adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting.")
-            +shop("web_templating/image/lalapam.jpg", "LALAPAM", "Lalapam adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting.")
-            +shop("web_templating/image/ayambakar'.jpg", "AYAM BAKAR", "Ayam bakar adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting.")
-            +shop("web_templating/image/bebekhitam.jpg", "BEBEK BUMBU HITAM", "Bebek bumbu hitam adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting.")
-            +shop("web_templating/image/nasipink.jpg", "NASI PINK", "Nasi pink adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting.")
-            +shop("web_templating/image/nasibatu.jpg", "NASI CAMPUR BATU", "Nasi campur batu adalah makanan khas dari daerah Jawa Tengah. Makanan ini terbuat dari bahan-bahan seperti kacang tanah, gula merah, dan cabai merah keriting.")
+        .shopcardsec
+            each item in shopItems
+                +shop(item.image, item.title, item.description)
         .btnshop 
-            +button ('View all')
+            +button('View all')

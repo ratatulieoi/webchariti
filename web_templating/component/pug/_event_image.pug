@@ -1,19 +1,17 @@
-mixin eventCard(date, month, title, time, location)
+mixin eventCard(data)
   .event-card(onclick=`window.location.href = 'eventclick.html'`)
     .event-card__image
-      img(src="web_templating/image/event1.png" alt="Event Image")
+      img(src=data.image alt="Event Image")
     .event-card__details
       .event-card__date
-        span.date= date
-        span.month= month
+        span.date= data.date
+        span.month= data.month
       .event-card__info
-        h3.title= title
+        h3.title= data.title
         .event-card__time-location
           .time
             i.fas.fa-clock
-            | #{time}
+            | #{data.time}
           .location
             i.fas.fa-map-marker-alt
-            | #{location}
-
-
+            | #{data.location}

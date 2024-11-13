@@ -1,44 +1,41 @@
-extends template.pug 
-
+extends template.pug
+include web_templating/component/pug/_privacy-section.pug
 block head
     link(rel="stylesheet", href="web_templating/csshalaman/privacy.css")
     link(rel="stylesheet", href="web_templating/csshalaman/global.css")
+
 block menu
     +menu
     +atas('Our Privacy Policy')
+
 block main
-    .container  
+    - 
+        var privacySections = [
+            { title: 'Information We Collect and Use', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'How We Use Personal Information', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'How We Share Your Personal Information', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'Cookies and Other Tools', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'Online Behavioral Advertising and the Advertising Option Icon', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'Security Policies', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'Your Privacy Choices and Updates', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'Transfer of Data to Other Countries', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'Children\'s Privacy', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'Contact Us', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' },
+            { title: 'Updates to our Privacy Policy', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus.' }
+        ]
+
+    .container
         .kebijakansec
             .judulprivacy
                 p Privacy Policy
                 .garislurus
-            .isiprivacy     
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed justo velit. Suspendisse sed libero quis erat rhoncus fringilla id non mauris. Praesent aliquet vel diam eu egestas. Aliquam dui augue, fermentum quis pretium in, condimentum eget neque. Curabitur scelerisque in felis a semper. Sed vehicula metus eu ipsum semper tempor. Donec nec quam erat. Fusce quis pharetra sem, vitae aliquet lectus. Duis et ligula sed odio malesuada maximus. Proin aliquet nisl eu euismod ultrices. In eget ipsum nec mi laoreet rhoncus a faucibus nunc. Aenean quis tortor varius, accumsan tortor quis, commodo felis. Suspendisse efficitur arcu id urna sodales dignissim. Vivamus nec arcu pretium, lobortis erat non, pellentesque mi. Ut commodo nec felis posuere blandit. Donec gravida mauris eget est aliquet, ac ornare metus consequat. Nunc at mauris vitae metus sagittis feugiat. Pellentesque euismod turpis in nisl lacinia lacinia. Quisque scelerisque pharetra diam sit amet dapibus. Mauris accumsan convallis diam, nec fermentum arcu convallis id.
-            .listprivacy 
-                li Information We Collect and Use
-                li How We Use Personal Information
-                li How We Share Your Personal Information
-                li Cookies and Other Tools
-                li Online Behavioral Advertising and the Advertising Option Icon
-                li Security Policies
-                li Your Privacy Choices and Updates
-                li Transfer of Data to Other Countries
-                li Children's Privacy
-                li Contact Us
-                li Updates to our Privacy Policy
-            .infoprivacy 
-                h2 Information We Collect and Use
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed just 
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed justo velit. Suspendisse sed libero quis erat rhoncus fringilla id non mauris. Praesent aliquet vel diam eu egestas. Aliquam dui augue, fermentum quis pretium in, condimentum eget neque. Curabitur scelerisque in felis a semper. Sed vehicula met
-            .infoprivacy 
-                h2 How We Use Personal Information
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed justo velit. Suspendisse sed libero quis erat rhoncus fringilla id non mauris. Praesent aliquet vel diam eu egestas. Aliquam dui augue, fermentum quis pretium in, condimentum eget neque. Curabitur scelerisque in felis a semper. Sed vehicula met
-            .infoprivacy 
-                h2 How We Use Personal Information
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed just o velit. Suspendisse sed libero quis erat rhoncus fringilla id non mauris. Praesent aliquet vel diam eu egestas. Aliquam dui augue, fermentum quis pretium in, condimentum eget neque. Curabitur scelerisque in felis a semper. Sed vehicula me2
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed justo velit. Suspendisse sed libero quis erat rhoncus fringilla id non mauris. Praesent aliquet vel diam eu egestas. Aliquam dui augue, fermentum quis pretium in, condimentum eget neque. Curabitur scelerisque in felis a semper. Sed vehicula met
-            .infoprivacy#bawah
-                h2 Information We Collect and Use
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed justo velit. Suspendisse sed libero quis erat rhoncus fringilla id non mauris. Praesent aliquet vel diam eu egestas. Aliquam dui augue, fermentum quis pretium in, condimentum eget neque. Curabitur scelerisque in felis a semper. Sed vehicula met
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed justo velit. Suspendisse sed libero quis erat rhoncus fringilla id non mauris. Praesent aliquet vel diam eu egestas. Aliquam dui augue, fermentum quis pretium in, condimentum eget neque. Curabitur scelerisque in felis a semper. Sed vehicula met Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   
-            
+            .isiprivacy
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ultrices orci a blandit. Duis eget pellentesque ipsum, imperdiet fermentum ante. Aliquam a mollis purus. Aliquam vel ipsum iaculis tortor malesuada aliquam. Duis sed justo velit. Suspendisse sed libero quis erat rhoncus fringilla id non mauris. Praesent aliquet vel diam eu egestas. Aliquam dui augue, fermentum quis pretium in, condimentum eget neque. Curabitur scelerisque in felis a semper. Sed vehicula metus eu ipsum semper tempor.
+
+            .listprivacy
+                each section in privacySections
+                    li
+                        a(href="#")= section.title
+                        
+            each section in privacySections
+                +privacySection(section.title, section.content)

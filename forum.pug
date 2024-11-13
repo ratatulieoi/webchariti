@@ -1,15 +1,18 @@
 extends template.pug 
 include web_templating/component/pug/_forum-article.pug
 include web_templating/component/pug/_profile-forum.pug
+
 block head 
-    link(rel="stylesheet", href="web_templating/component/css/forum-mix.css")
-    link(rel="stylesheet", href="web_templating/csshalaman/forum.css")
-    link(rel="stylesheet", href="web_templating/csshalaman/global.css")
-    link(rel="stylesheet", href="web_templating/component/css/profile-forum.css")
+    link(rel="stylesheet" href="web_templating/component/css/forum-mix.css")
+    link(rel="stylesheet" href="web_templating/csshalaman/forum.css")
+    link(rel="stylesheet" href="web_templating/csshalaman/global.css")
+    link(rel="stylesheet" href="web_templating/component/css/profile-forum.css")
     title Forum
+
 block menu 
     +menu
     +atas('Forum')
+
 block main 
     .container
         .sec-content-article
@@ -17,54 +20,6 @@ block main
                 .text-up
                     h1 Club News
                     p Here goes some rice category description, Good for seo
-                +articleForum(
-                    "web_templating/image/portfolio3.png",
-                    "Forum Image",
-                    "Budget for the Organization You Want to Be",
-                    "Empowering communities through strategic budgeting can make a significant impact on social initiatives. By effectively allocating resources, charities can reach more individuals and drive sustainable change."
-                )
-                +articleForum(
-                    "web_templating/image/portfolio2.png",
-                    "Forum Image",
-                    "Fundraising for Immediate Relief",
-                    "When disasters strike, quick and efficient fundraising is essential. Providing emergency funds helps support those in need and ensures timely assistance in critical situations."
-                )
-                +articleForum(
-                    "web_templating/image/portfolio1.png",
-                    "Forum Image",
-                    "Educational Programs for All Ages",
-                    "Education is a cornerstone for change. By supporting learning opportunities for children and adults alike, we can build a future where everyone has the tools to succeed."
-                )
-                +articleForum(
-                    "web_templating/image/volunteer1.png",
-                    "Forum Image",
-                    "Building Partnerships for Better Outcomes",
-                    "Through partnerships with local organizations and community leaders, we can enhance our reach and create a stronger impact. Collaboration amplifies the effectiveness of charitable initiatives."
-                )
 
-            .sec-content-form
-                h2 Form our Forums
-                +profileForum(
-                    "John Doe",
-                    "web_templating/image/profile1.png",
-                    "27 - 07 - 2025",
-                    "Dedicated to community upliftment through educational outreach programs. Believes in making knowledge accessible for all."
-                )
-                +profileForum(
-                    "John Smith",
-                    "web_templating/image/profile1.png",
-                    "07 - 02 - 2025",
-                    "Passionate about providing emergency relief to those affected by natural disasters. Committed to helping communities rebuild stronger."
-                )
-                +profileForum(
-                    "Angger",
-                    "web_templating/image/profile1.png",
-                    "12 - 05 - 2025",
-                    "Advocates for sustainable living and supports environmental projects. Focused on preserving nature for future generations."
-                )
-                +profileForum(
-                    "John Cena",
-                    "web_templating/image/profile1.png",
-                    "02 - 03 - 2025",
-                    "Supports health and wellness initiatives to improve quality of life. Works on making healthcare accessible to underserved areas."
-                )
+            each article in [{image: "web_templating/image/portfolio3.png",alt: "Forum Image",title: "Budget for the Organization You Want to Be",description: "Empowering communities through strategic budgeting can make a significant impact on social initiatives. By effectively allocating resources, charities can reach more individuals and drive sustainable change."},{image: "web_templating/image/portfolio2.png",alt: "Forum Image",title: "Fundraising for Immediate Relief",description: "When disasters strike, quick and efficient fundraising is essential. Providing emergency funds helps support those in need and ensures timely assistance in critical situations."},{image: "web_templating/image/portfolio1.png",alt: "Forum Image",title: "Educational Programs for All Ages",description: "Education is a cornerstone for change. By supporting learning opportunities for children and adults alike, we can build a future where everyone has the tools to succeed."},{image: "web_templating/image/volunteer1.png",alt: "Forum Image",title: "Building Partnerships for Better Outcomes",description: "Through partnerships with local organizations and community leaders, we can enhance our reach and create a stronger impact. Collaboration amplifies the effectiveness of charitable initiatives."}]
+                +articleForum(article.image, article.alt, article.title, article.description)

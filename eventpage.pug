@@ -7,20 +7,15 @@ block head
     link(rel="stylesheet", href="web_templating/csshalaman/event.css")
     link(rel="stylesheet", href="web_templating/csshalaman/eventclick.css")
     title Event
+
 block menu 
     +menu
     +atas('Upcoming Event')
+
 block main 
+    - const events = [{ date: '30', month: 'Apr', title: 'Youth Empowerment Conference', time: '9:00 am - 5:00 pm', location: 'Marengan', image: 'web_templating/image/event1.png' },{ date: '23', month: 'Apr', title: 'Community Clean-Up Day', time: '8:00 am - 12:00 pm', location: 'Sampang', image: 'web_templating/image/event2.png' },{ date: '5', month: 'Apr', title: 'Youth Sports Festival', time: '10:00 am - 6:00 pm', location: 'Pamolokan', image: 'web_templating/image/event3.png' },{ date: '90', month: 'Apr', title: 'London Cultural Fair', time: '1:00 pm - 9:00 pm', location: 'London', image: 'web_templating/image/event4.png' },{ date: '6', month: 'Apr', title: 'Tech for Good Workshop', time: '11:00 am - 4:00 pm', location: 'Bogor', image: 'web_templating/image/event5.png' },{ date: '65', month: 'Apr', title: 'Sumenep Food Festival', time: '12:00 pm - 8:00 pm', location: 'Sumenep', image: 'web_templating/image/event6.png' },{ date: '4', month: 'Apr', title: 'Art & Music Showcase', time: '5:00 pm - 10:00 pm', location: 'Batuan', image: 'web_templating/image/event7.png' },{ date: '25', month: 'Apr', title: 'Environmental Awareness Talk', time: '9:00 am - 3:00 pm', location: 'Madiun', image: 'web_templating/image/event8.png' },{ date: '2', month: 'Apr', title: 'Traditional Cuisine Tasting', time: '2:00 pm - 7:00 pm', location: 'Magetan', image: 'web_templating/image/event9.png' },{ date: '2', month: 'Apr', title: 'Youth Leadership Camp', time: '6:00 am - 6:00 pm', location: 'Saronggi', image: 'web_templating/image/event10.png' },{ date: '2', month: 'Apr', title: 'JKT48 Fan Meet', time: '10:00 am - 5:00 pm', location: 'Jakarta', image: 'web_templating/image/event11.png' }]
+
     .container 
         .eventcardsec
-            +eventCard('30', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Marengan')
-            +eventCard('23', 'Apr', 'Benjir Polehh', '7:00 am - 7:00 am', 'Sampang')
-            +eventCard('5', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Pamolokan')
-            +eventCard('90', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'London')
-            +eventCard('6', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Bogor')
-            +eventCard('65', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Sumenep')
-            +eventCard('4', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Batuan')
-            +eventCard('25', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Madiun')
-            +eventCard('2', 'Apr', 'Warung Bekicot', '7:00 am - 7:00 am', 'Magetan')
-            +eventCard('2', 'Apr', 'Youth Commissioner Weekend', '7:00 am - 7:00 am', 'Saronggi')
-            +eventCard('2', 'Apr', 'JKT48 Uhuy', '7:00 am - 7:00 am', 'Jakarta')
+            each event in events
+                +eventCard(event)
